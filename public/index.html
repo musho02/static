@@ -29,17 +29,17 @@
   <!-- JavaScript เพื่อโหลดเนื้อหาของไฟล์ HTML ที่สร้างแยก -->
   <script>
     // โหลด Navbar
-    fetch('navbar.html')
+    fetch('./component/navbar.html')
       .then(response => response.text())
       .then(data => document.getElementById('navbar').innerHTML = data);
 
     // โหลด Sidebar
-    fetch('sidebar.html')
+    fetch('./component/sidebar.html')
       .then(response => response.text())
       .then(data => document.getElementById('sidebar').innerHTML = data);
 
     // โหลด Footer
-    fetch('footer.html')
+    fetch('./component/footer.html')
       .then(response => response.text())
       .then(data => document.getElementById('footer').innerHTML = data);
   </script>
