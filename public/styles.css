@@ -1,9 +1,8 @@
-/* ตั้งค่าพื้นฐานสำหรับ body */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-image: url('./background/starrailBG.jpg'); /* เส้นทางของภาพพื้นหลัง */
+    background-image: url('./background/starrailBG.jpg'); /* ตั้งค่า URL ของภาพพื้นหลัง */
     background-size: cover; /* ขยายภาพให้เต็มพื้นที่ */
     background-position: center; /* จัดภาพให้อยู่กลาง */
     background-repeat: no-repeat; /* ไม่ให้ภาพซ้ำ */
@@ -47,6 +46,7 @@ body {
 .main-content {
     display: flex;
     padding: 20px;
+    margin-top: 60px;
 }
 
 /* Left Content (เนื้อหาหลักของแต่ละหน้า) */
@@ -61,7 +61,7 @@ body {
 /* Sidebar (ด้านขวา) */
 .sidebar {
     position: fixed; /* ทำให้ sidebar ติดอยู่ที่ขอบจอ */
-    top: 60px; /* ปรับให้ด้านบนของ sidebar อยู่ใต้ Navbar */
+    top: 60px; /* ปรับให้ด้านบนของ sidebar อยู่ใต้ Navbar (ตามความสูงของ navbar) */
     right: 0; /* ติดขอบขวาของจอ */
     width: 60px; /* ความกว้างของ sidebar เพื่อให้พอใส่โลโก้ */
     height: calc(100% - 60px); /* ยาวตั้งแต่ Navbar จนถึงขอบล่างของจอ */
@@ -73,7 +73,9 @@ body {
     flex-direction: column; /* วางโลโก้ในแนวตั้ง */
     align-items: center; /* จัดกลางแนวตั้ง */
     justify-content: flex-start; /* จัดให้โลโก้อยู่ด้านบน */
+    z-index: 1000; /* ทำให้ sidebar อยู่เหนือเนื้อหาทั้งหมด */
 }
+
 
 /* Footer */
 .footer {
