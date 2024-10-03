@@ -3,7 +3,10 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    background-image: url('./background/starrailBG.jpg'); /* เส้นทางของภาพพื้นหลัง */
+    background-size: cover; /* ขยายภาพให้เต็มพื้นที่ */
+    background-position: center; /* จัดภาพให้อยู่กลาง */
+    background-repeat: no-repeat; /* ไม่ให้ภาพซ้ำ */
 }
 
 /* การออกแบบ Navbar */
@@ -44,6 +47,7 @@ body {
 .main-content {
     display: flex;
     padding: 20px;
+    margin-right: 270px; /* ให้พื้นที่สำหรับ sidebar */
 }
 
 /* Left Content (เนื้อหาหลักของแต่ละหน้า) */
@@ -57,12 +61,16 @@ body {
 
 /* Sidebar (ด้านขวา) */
 .sidebar {
-    flex: 1;
+    position: fixed; /* ทำให้ sidebar ติดอยู่ที่ขอบจอ */
+    top: 60px; /* ปรับให้ด้านบนของ sidebar อยู่ใต้ Navbar */
+    right: 0; /* ติดขอบขวาของจอ */
+    width: 250px; /* กำหนดความกว้างของ sidebar */
+    height: calc(100% - 60px); /* ยาวตั้งแต่ Navbar จนถึงขอบล่างของจอ */
     padding: 20px;
-    margin-left: 20px;
     background-color: rgba(236, 240, 241, 0.8); /* สีโปร่งใส */
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow-y: auto; /* เพิ่ม scroll bar ถ้าเนื้อหามากเกินไป */
 }
 
 /* Footer */
@@ -83,10 +91,14 @@ body {
 
     .main-content {
         flex-direction: column;
+        margin-right: 0; /* ลบพื้นที่ margin สำหรับ sidebar ในหน้าจอเล็ก */
     }
 
     .sidebar {
         margin-left: 0;
         margin-top: 20px;
+        position: static; /* เปลี่ยนเป็น static สำหรับมือถือ */
+        height: auto; /* ปรับความสูงตามเนื้อหา */
+        width: 100%; /* ทำให้ sidebar กว้างเต็มจอสำหรับมือถือ */
     }
 }
