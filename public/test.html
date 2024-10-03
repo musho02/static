@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GSAP Animation</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
+  <style>
+    .character {
+      width: 100px;
+      height: 100px;
+    }
+  </style>
+</head>
+<body>
+  <img src="character/Caelus.png" alt="Character" class="character" id="character">
+
+  <script>
+    gsap.to("#character", { x: 300, duration: 2, repeat: -1, yoyo: true });
+  </script>
+</body>
+</html>
