@@ -70,6 +70,7 @@ body {
     margin: 20px auto; /* เว้นระยะห่างด้านบนและล่าง และจัดกลางในแนวนอน */
     display: block; /* ทำให้แน่ใจว่าภาพเป็น block-level element */
     max-width: 100%; /* ขนาดภาพไม่เกินความกว้างของ container */
+    overflow: hidden;
 }
 
 @keyframes floatUpDown {
@@ -91,7 +92,8 @@ body {
     margin: 20px auto; /* เว้นระยะห่างด้านบนและล่าง และจัดกลางในแนวนอน */
     display: block; /* ทำให้แน่ใจว่าภาพเป็น block-level element */
     max-width: 100%; /* ขนาดภาพไม่เกินความกว้างของ container */
-    animation: floatUpDown 5s ease-in-out infinite;
+    position: absolute; /* ใช้สำหรับการเคลื่อนไหว */
+    animation: moveUpDown 5s infinite alternate; /* ใช้ animation */
 }
 
 .overlay-image {
