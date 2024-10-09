@@ -1,3 +1,4 @@
+/* ตั้งค่าพื้นฐานสำหรับ body */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -15,6 +16,10 @@ body {
     align-items: center;
     background-color: #2c3e50;
     padding: 15px;
+    position: fixed; /* Fix the navbar at the top */
+    top: 0;
+    width: 100%;
+    z-index: 1001; /* Above Sidebar */
 }
 
 .navbar-logo img {
@@ -46,63 +51,46 @@ body {
 .main-content {
     display: flex;
     padding: 20px;
-    margin-top: 60px;
+    margin-top: 80px; /* Adjusted for fixed navbar */
 }
 
-.image-container {
-    position: relative; /* ทำให้ container เป็น positioning context */
-    height: 500px; /* กำหนดความสูงของ container */
-}
-
+/* Container for image */
 .responsive-image {
-    height: 500px; /* ความสูงคงที่ที่คุณต้องการ */
-    object-fit: cover; /* ไม่เปลี่ยนสัดส่วนภาพ ให้ครอบคลุมกรอบ */
-    border-radius: 10px; /* เพิ่มมุมโค้งให้ภาพ */
-    margin: 20px auto; /* เว้นระยะห่างด้านบนและล่าง และจัดกลางในแนวนอน */
-    display: block; /* ทำให้แน่ใจว่าภาพเป็น block-level element */
-    max-width: 100%; /* ขนาดภาพไม่เกินความกว้างของ container */
+    width: 100%;
+    height: 500px; /* Fixed height */
+    overflow: hidden; /* Hide overflow */
+    position: relative; /* Positioning context */
+    text-align: center; /* Center images */
+    padding: 0; /* Remove padding */
+    margin: 20px 0; /* Vertical margin */
 }
 
-.responsive-image {
-    height: 500px; /* ความสูงคงที่ที่คุณต้องการ */
-    object-fit: cover; /* ไม่เปลี่ยนสัดส่วนภาพ ให้ครอบคลุมกรอบ */
-    border-radius: 10px; /* เพิ่มมุมโค้งให้ภาพ */
-    margin: 20px auto; /* เว้นระยะห่างด้านบนและล่าง และจัดกลางในแนวนอน */
-    display: block; /* ทำให้แน่ใจว่าภาพเป็น block-level element */
-    max-width: 100%; /* ขนาดภาพไม่เกินความกว้างของ container */
-    overflow: hidden;
-    position: relative;
-    align-items: center;
-    text-align: center;
-    justify-content: center;
-    padding: 20px 0 20px 0;
-}
-
+/* Animation keyframes */
 @keyframes floatUpDown {
     0% {
-        transform: translateY(0); /* เริ่มต้นที่ตำแหน่งปกติ */
+        transform: translateY(0);
     }
     50% {
-        transform: translateY(-20px); /* ขยับขึ้น 20px */
+        transform: translateY(-20px);
     }
     100% {
-        transform: translateY(0); /* กลับสู่ตำแหน่งปกติ */
+        transform: translateY(0);
     }
 }
 
+/* Animated image */
 .responsive-image-updown {
-    height: 100%; /* ความสูงเท่ากับ container */
-    object-fit: cover; /* ไม่เปลี่ยนสัดส่วนภาพ ให้ครอบคลุมกรอบ */
-    border-radius: 10px; /* เพิ่มมุมโค้งให้ภาพ */
-    display: block; /* ทำให้แน่ใจว่าภาพเป็น block-level element */
-    position: absolute; /* ใช้สำหรับการเคลื่อนไหว */
-    animation: floatUpDown 5s infinite alternate; /* ใช้ animation ที่ถูกต้อง */
-    margin: 0 auto;
+    height: 100%; /* Fill container height */
+    object-fit: cover; /* Cover container */
+    border-radius: 10px; /* Rounded corners */
+    display: block; /* Block-level element */
+    margin: 0 auto; /* Center horizontally */
+    animation: floatUpDown 5s infinite alternate; /* Apply animation */
 }
 
 /* Left Content (เนื้อหาหลักของแต่ละหน้า) */
 .left-content {
-    flex: 1; /* ปรับให้เนื้อหาหลักยืดหยุ่น */
+    flex: 1; /* Flexible content */
     padding: 20px;
     background-color: #fff;
     border-radius: 10px;
@@ -111,22 +99,21 @@ body {
 
 /* Sidebar (ด้านขวา) */
 .sidebar {
-    position: fixed; /* ทำให้ sidebar ติดอยู่ที่ขอบจอ */
-    top: 60px; /* ปรับให้ด้านบนของ sidebar อยู่ใต้ Navbar (ตามความสูงของ navbar) */
-    right: 0; /* ติดขอบขวาของจอ */
-    width: 60px; /* ความกว้างของ sidebar เพื่อให้พอใส่โลโก้ */
-    height: calc(100% - 60px); /* ยาวตั้งแต่ Navbar จนถึงขอบล่างของจอ */
-    padding: 10px; /* เพิ่ม padding เล็กน้อย */
-    background-color: rgba(236, 240, 241, 0.8); /* สีโปร่งใส */
-    border-radius: 10px; /* มุมโค้ง */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* เงา */
-    display: flex; /* ใช้ flex เพื่อจัดแนวโลโก้ */
-    flex-direction: column; /* วางโลโก้ในแนวตั้ง */
-    align-items: center; /* จัดกลางแนวตั้ง */
-    justify-content: flex-start; /* จัดให้โลโก้อยู่ด้านบน */
-    z-index: 1000; /* ทำให้ sidebar อยู่เหนือเนื้อหาทั้งหมด */
+    position: fixed; /* Fixed sidebar */
+    top: 80px; /* Below navbar */
+    right: 0;
+    width: 60px; /* Narrow width */
+    height: calc(100% - 80px); /* Full height minus navbar */
+    padding: 10px;
+    background-color: rgba(236, 240, 241, 0.8); /* Transparent */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    z-index: 1000; /* Below navbar */
 }
-
 
 /* Footer */
 .footer {
@@ -151,8 +138,19 @@ body {
     .sidebar {
         margin-left: 0;
         margin-top: 20px;
-        position: static; /* เปลี่ยนเป็น static สำหรับมือถือ */
-        height: auto; /* ปรับความสูงตามเนื้อหา */
-        width: 100%; /* ทำให้ sidebar กว้างเต็มจอสำหรับมือถือ */
+        position: static; /* Static position for mobile */
+        height: auto; /* Adjust height */
+        width: 100%; /* Full width for mobile */
+    }
+
+    .responsive-image-updown {
+        height: auto; /* Adjust height for mobile */
+        object-fit: cover;
+        margin: 0 auto;
+        animation: floatUpDown 5s infinite alternate; /* Continue animation */
+    }
+
+    .responsive-image {
+        height: auto; /* Adjust container height */
     }
 }
