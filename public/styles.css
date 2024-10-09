@@ -97,6 +97,7 @@ body {
     display: block; /* ทำให้แน่ใจว่าภาพเป็น block-level element */
     position: absolute; /* ใช้สำหรับการเคลื่อนไหว */
     animation: floatUpDown 5s infinite alternate; /* ใช้ animation ที่ถูกต้อง */
+    margin: 0 auto;
 }
 
 /* Left Content (เนื้อหาหลักของแต่ละหน้า) */
