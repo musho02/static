@@ -91,10 +91,7 @@ body {
     object-fit: cover; /* ไม่เปลี่ยนสัดส่วนภาพ ให้ครอบคลุมกรอบ */
     border-radius: 10px; /* เพิ่มมุมโค้งให้ภาพ */
     display: block; /* ทำให้แน่ใจว่าภาพเป็น block-level element */
-    max-width: 100%; /* ขนาดภาพไม่เกินความกว้างของ container */
     position: absolute; /* ใช้สำหรับการเคลื่อนไหว */
-    top: 0;
-    left: 0;
     animation: floatUpDown 5s infinite alternate; /* ใช้ animation ที่ถูกต้อง */
 }
 
