@@ -72,6 +72,8 @@ body {
     max-width: 100%; /* ขนาดภาพไม่เกินความกว้างของ container */
     overflow: hidden;
     position: relative;
+    align-items: center;
+    text-align: center;
 }
 
 @keyframes floatUpDown {
