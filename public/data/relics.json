@@ -1,227 +1,265 @@
 [
     {
+      "id": "1",
       "image": "./relic/Musketeer of Wild Wheat.png",
       "name": "Musketeer of Wild Wheat",
       "effect2": "ATK เพิ่มขึ้น 12%",
       "effect4": "ความเร็วของผู้สวมใส่เพิ่มขึ้น 6% และ DMG จากการโจมตีปกติเพิ่มขึ้น 10%"
     },
     {
+      "id": "2",
       "image": "./relic/Passerby of Wandering Cloud.png",
       "name": "Passerby of Wandering Cloud",
       "effect2": "การรักษาเพิ่มขึ้น 10%",
       "effect4": "เมื่อเริ่มต้นการต่อสู้ จะฟื้นฟูแต้มสกิลต่อสู้ของฝ่ายตัวเอง 1 แต้มโดยทันที"
     },
     {
+      "id": "3",
       "image": "./relic/Knight of Purity Palace.png",
       "name": "Knight of Purity Palace",
       "effect2": "DEF เพิ่มขึ้น 15%",
       "effect4": "ปริมาณโล่ที่ผู้สวมใส่มอบให้เพิ่มขึ้น 20%"
     },
     {
+      "id": "4",
       "image": "./relic/Hunter of Glacial Forest.png",
       "name": "Hunter of Glacial Forest",
       "effect2": "DMG น้ำแข็งเพิ่มขึ้น 10%",
       "effect4": "เมื่อผู้สวมใส่ใช้ท่าไม้ตาย DMG คริติคอลจะเพิ่มขึ้น 25% เป็นเวลา 2 เทิร์น"
     },
     {
+      "id": "5",
       "image": "./relic/Champion of Streetwise Boxing.png",
       "name": "Champion of Streetwise Boxing",
       "effect2": "DMG กายภาพเพิ่มขึ้น 10%",
       "effect4": "หลังจากที่ผู้สวมใส่ทำการโจมตีหรือถูกโจมตี ATK ของผู้ที่อยู่ในการต่อสู้จะเพิ่มขึ้น 5% ซึ่งสามารถซ้อนทับได้สูงสุด 5 ชั้น"
     },
     {
+      "id": "6",
       "image": "./relic/Guard of Wuthering Snow.png",
       "name": "Guard of Wuthering Snow",
       "effect2": "ได้รับ DMG ลดลง 8%",
       "effect4": "เมื่อเริ่มต้นเทิร์น หากเปอร์เซ็นต์ HP ปัจจุบันของผู้สวมใส่เท่ากับหรือน้อยกว่า 50% จะฟื้นฟู HP 8% ของ HP สูงสุดของตัวเอง และฟื้นฟูพลังงาน 5 หน่วย"
     },
     {
+      "id": "7",
       "image": "./relic/Firesmith of Lava-Forging.png",
       "name": "Firesmith of Lava-Forging",
       "effect2": "DMG ไฟเพิ่มขึ้น 10%",
       "effect4": "ทำให้สกิลต่อสู้ของผู้สวมใส่สร้าง DMG เพิ่มขึ้น 12% และหลังจากที่ปล่อยท่าไม้ตาย การโจมตีครั้งต่อไปจะสร้าง DMG ไฟเพิ่มขึ้น 12%"
     },
     {
+      "id": "8",
       "image": "./relic/Genius of Brilliant Stars.png",
       "name": "Genius of Brilliant Stars",
       "effect2": "DMG ควอนตัมเพิ่มขึ้น 10%",
       "effect4": "เมื่อผู้สวมใส่สร้าง DMG แก่ศัตรูเป้าหมาย จะเพิกเฉยต่อ DEF 10% ของศัตรู หากเป้าหมายมีจุดอ่อนควอนตัม ผู้สวมใส่จะเพิกเฉยต่อ DEF 10% เพิ่มเติม"
     },
     {
+      "id": "9",
       "image": "./relic/Band of Sizzling Thunder.png",
       "name": "Band of Sizzling Thunder",
       "effect2": "DMG สายฟ้าเพิ่มขึ้น 10%",
       "effect4": "เมื่อผู้สวมใส่ใช้สกิลต่อสู้ ATK ของผู้สวมใส่จะเพิ่มขึ้น 20% เป็นเวลา 1 เทิร์น"
     },
     {
+      "id": "10",
       "image": "./relic/Eagle of Twilight Line.png",
       "name": "Eagle of Twilight Line",
       "effect2": "DMG ลมเพิ่มขึ้น 10%",
       "effect4": "หลังจากผู้สวมใส่ใช้ท่าไม้ตาย จะเร่งแอ็กชันขึ้น 25%"
     },
     {
+      "id": "11",
       "image": "./relic/Thief of Shooting Meteor.png",
       "name": "Thief of Shooting Meteor",
       "effect2": "เอฟเฟกต์ทำลายล้างเพิ่มขึ้น 16%",
       "effect4": "เอฟเฟกต์ทำลายล้างของผู้สวมใส่เพิ่มขึ้น 16% หลังจากผู้สวมใส่ทำลายจุดอ่อนของศัตรูเป้าหมาย จะฟื้นฟูพลังงาน 3 หน่วย"
     },
     {
+      "id": "12",
       "image": "./relic/Wastelander of Banditry Desert.png",
       "name": "Wastelander of Banditry Desert",
       "effect2": "DMG จินตภาพเพิ่มขึ้น 10%",
       "effect4": "เมื่อผู้สวมใส่สร้าง DMG แก่ศัตรูเป้าหมายที่ติดเอฟเฟกต์ Debuff อัตราคริติคอลจะเพิ่มขึ้น 10% และเมื่อสร้าง DMG แก่ศัตรูเป้าหมายติดสถานะกักขัง DMG คริติคอลจะเพิ่มขึ้น 20%"
     },
     {
+      "id": "13",
       "image": "./relic/Longevous Disciple.png",
       "name": "Longevous Disciple",
       "effect2": "HP สูงสุดเพิ่มขึ้น 12%",
       "effect4": "หลังจากผู้สวมใส่โดนโจมตี หรือถูกเป้าหมายฝ่ายเรา (รวมถึงผู้สวมใส่) ใช้ HP ไป อัตราคริติคอลจะเพิ่มขึ้น 8% เป็นเวลา 2 เทิร์น โดยเอฟเฟกต์นี้จะซ้อนทับได้มากสุด 2 ชั้น"
     },
     {
+      "id": "14",
       "image": "./relic/Messenger Traversing Hackerspace.png",
       "name": "Messenger Traversing Hackerspace",
       "effect2": "ความเร็วเพิ่มขึ้น 6%",
       "effect4": "เมื่อผู้สวมใส่ใช้ท่าไม้ตายกับเป้าหมายฝ่ายเรา ความเร็วของฝ่ายเราทั้งหมด จะเพิ่มขึ้น 12% เป็นเวลา 1 เทิร์น โดยเอฟเฟกต์นี้ไม่สามารถซ้อนทับได้"
     },
     {
+      "id": "15",
       "image": "./relic/The Ashblazing Grand Duke.png",
       "name": "The Ashblazing Grand Duke",
       "effect2": "DMG ที่เกิดจากการโจมตีต่อเนื่องเพิ่มขึ้น 20%",
       "effect4": "เมื่อผู้สวมใส่ปล่อยการโจมตีต่อเนื่อง ATK ของผู้สวมใส่จะเพิ่มขึ้น 6% ทุกครั้งที่เกิด DMG จากการโจมตีต่อเนื่อง และสามารถซ้อนทับได้สูงสุด 8 ครั้ง เป็นเวลา 3 เทิร์น โดยเอฟเฟกต์นี้จะถูกลบออกไปเมื่อผู้สวมใส่ปล่อยการโจมตีต่อเนื่องในครั้งถัดไป"
     },
     {
+      "id": "16",
       "image": "./relic/Prisoner in Deep Confinement.png",
       "name": "Prisoner in Deep Confinement",
       "effect2": "ATK เพิ่มขึ้น 12%",
       "effect4": "ทุกครั้งที่ศัตรูเป้าหมายได้รับเอฟเฟกต์ DMG ต่อเนื่อง 1 เอฟเฟกต์ ผู้สวมใส่จะเพิกเฉยต่อ DEF 6% ของศัตรูตัวนั้นๆ เมื่อสร้าง DMG แก่ศัตรูดังกล่าว โดยสามารถสร้างเอฟเฟกต์ DMG ต่อเนื่องได้สูงสุดถึง 3 เอฟเฟกต์"
     },
     {
+      "id": "17",
       "image": "./relic/Pioneer Diver of Dead Waters.png",
       "name": "Pioneer Diver of Dead Waters",
       "effect2": "สร้าง DMG แก่ศัตรูที่ติดสถานะ Debuff เพิ่มขึ้น 12%",
       "effect4": "อัตราคริติคอลเพิ่มขึ้น 4% และผู้สวมใส่จะสร้าง DMG คริติคอลเพิ่มขึ้น 8%/12% แก่ศัตรูเป้าหมายที่ติดเอฟเฟกต์ Debuff ไม่น้อยกว่า 2/3 เอฟเฟกต์ และหลังจากผู้สวมใส่ปล่อยเอฟเฟกต์ Debuff ใส่ศัตรูเป้าหมาย เอฟเฟกต์ข้างต้นจะเพิ่มขึ้น 100% เป็นเวลา 1 เทิร์น"
     },
     {
+      "id": "18",
       "image": "./relic/Watchmaker, Master of Dream Machinations.png",
       "name": "Watchmaker, Master of Dream Machinations",
       "effect2": "เอฟเฟกต์ทำลายล้างเพิ่มขึ้น 16%",
       "effect4": "เมื่อผู้สวมใส่ ใช้ท่าไม้ตายกับเป้าหมายฝ่ายเรา เอฟเฟกต์ทำลายล้างของฝ่ายเราทั้งหมด จะเพิ่มขึ้น 30% เป็นเวลา 2 เทิร์น โดยเอฟเฟกต์นี้ไม่สามารถซ้อนทับได้"
     },
     {
+      "id": "19",
       "image": "./relic/Iron Cavalry Against the Scourge.png",
       "name": "Iron Cavalry Against the Scourge",
       "effect2": "เอฟเฟกต์ทำลายล้างเพิ่มขึ้น 16%",
       "effect4": "ขณะที่เอฟเฟกต์ทำลายล้างของผู้สวมใส่ มากกว่าหรือเท่ากับ 150% DMG ทำลายล้างที่สร้างแก่ศัตรูเป้าหมาย จะเพิกเฉยต่อ DEF 10% ของศัตรูดังกล่าว และเมื่อเอฟเฟกต์ทำลายล้างของผู้สวมใส่ มากกว่าหรือเท่ากับ 250% DMG สุดยอดทำลายล้าง ที่สร้างแก่ศัตรูเป้าหมาย จะเพิกเฉยต่อ DEF 15% ของศัตรูดังกล่าวเพิ่มเติม"
     },
     {
+      "id": "20",
       "image": "./relic/The Wind-Soaring Valorous.png",
       "name": "The Wind-Soaring Valorous",
       "effect2": "ATK เพิ่มขึ้น 12%",
       "effect4": "อัตราคริติคอลของผู้สวมใส่ เพิ่มขึ้น 6% เมื่อผู้สวมใส่ปล่อยการโจมตีต่อเนื่อง จะทำให้ท่าไม้ตายสร้าง DMG เพิ่มขึ้น 36% เป็นเวลา 1 เทิร์น"
     },
     {
-      "image": "./relic/Space Station.png",
-      "name": "Space Station",
+      "id": "21",
+      "image": "./relic/Space Sealing Station.png",
+      "name": "Space Sealing Station",
       "effect2": "ATK ของผู้สวมใส่เพิ่มขึ้น 12% เมื่อความเร็วของผู้สวมใส่เท่ากับหรือมากกว่า 120",
       "effect4": "ATK จะเพิ่มขึ้นอีก 12%"
     },
     {
+      "id": "22",
       "image": "./relic/Fleet of the Ageless.png",
       "name": "Fleet of the Ageless",
       "effect2": "HP สูงสุดของผู้สวมใส่เพิ่มขึ้น 12% เมื่อความเร็วของผู้สวมใส่เท่ากับหรือมากกว่า 120",
       "effect4": "ATK ของฝ่ายตัวเองทั้งหมดจะเพิ่มขึ้น 8%"
     },
     {
+      "id": "23",
       "image": "./relic/Pan-Cosmic Commercial Enterprise.png",
       "name": "Pan-Cosmic Commercial Enterprise",
       "effect2": "อัตราสร้างสถานะของผู้สวมใส่เพิ่มขึ้น 10% พร้อมทั้งเพิ่ม ATK 25% ของอัตราสร้างสถานะในปัจจุบัน ซึ่งจะเพิ่มได้สูงสุด 25%",
       "effect4": "-"
     },
     {
+      "id": "24",
       "image": "./relic/Belobog of the Architects.png",
       "name": "Belobog of the Architects",
       "effect2": "DEF ของผู้สวมใส่เพิ่มขึ้น 15% เมื่ออัตราสร้างสถานะของผู้สวมใส่มากกว่าหรือเท่ากับ 50%",
       "effect4": "DEF จะเพิ่มขึ้นอีก 15%"
     },
     {
+      "id": "25",
       "image": "./relic/Celestial Differentiator.png",
       "name": "Celestial Differentiator",
       "effect2": "ทำให้ DMG คริติคอลของผู้สวมใส่เพิ่มขึ้น 16%",
       "effect4": "เมื่อ DMG คริติคอลของผู้สวมใส่มากกว่าหรือเท่ากับ 120% หลังจากเข้าสู่การต่อสู้ อัตราคริติคอลของผู้สวมใส่จะเพิ่มขึ้น 60% จนกว่าการโจมตีครั้งแรกจะสิ้นสุด"
     },
     {
+      "id": "26",
       "image": "./relic/Inert Salsotto.png",
       "name": "Inert Salsotto",
       "effect2": "ทำให้อัตราคริติคอลของผู้สวมใส่เพิ่มขึ้น 8% เมื่ออัตราคริติคอลปัจจุบันของผู้สวมใส่มากกว่าหรือเท่ากับ 50%",
       "effect4": "DMG จากท่าไม้ตายและการโจมตีต่อเนื่องจะเพิ่มขึ้น 15%"
     },
     {
+      "id": "27",
       "image": "./relic/Talia - Kingdom of Banditry.png",
       "name": "Talia - Kingdom of Banditry",
       "effect2": "เอฟเฟกต์ทำลายล้างของผู้สวมใส่เพิ่มขึ้น 16%",
       "effect4": "เมื่อความเร็วของผู้สวมใส่เท่ากับหรือมากกว่า 145 เอฟเฟกต์ทำลายล้างจะเพิ่มขึ้นอีก 20%"
     },
     {
+      "id": "28",
       "image": "./relic/Sprightly Vonwacq.png",
       "name": "Sprightly Vonwacq",
       "effect2": "อัตราการฟื้นฟูพลังงานของผู้สวมใส่เพิ่มขึ้น 5% เมื่อความเร็วของผู้สวมใส่เท่ากับหรือมากกว่า 120",
       "effect4": "เมื่อเข้าสู่การต่อสู้ จะเร่งแอ็กชันขึ้นทันที 40%"
     },
     {
+      "id": "29",
       "image": "./relic/Rutilant Arena.png",
       "name": "Rutilant Arena",
       "effect2": "ทำให้อัตราคริติคอลของผู้สวมใส่เพิ่มขึ้น 8% เมื่ออัตราคริติคอลปัจจุบัน ของผู้สวมใส่มากกว่าหรือเท่ากับ 70%",
       "effect4": "DMG จากการโจมตีปกติและสกิลต่อสู้จะเพิ่มขึ้น 20%"
     },
     {
+      "id": "30",
       "image": "./relic/Broken Keel.png",
       "name": "Broken Keel",
       "effect2": "ทำให้การต้านทานสถานะ ของผู้สวมใส่เพิ่มขึ้น 10% เมื่อการต้านทานสถานะของผู้สวมใส่ เท่ากับหรือมากกว่า 30%",
       "effect4": "DMG คริติคอลของฝ่ายตัวเองทั้งหมดจะเพิ่มขึ้น 10%"
     },
     {
+      "id": "31",
       "image": "./relic/Firmament Frontline Glamoth.png",
       "name": "Firmament Frontline Glamoth",
       "effect2": "ทำให้ ATK ของผู้สวมใส่เพิ่มขึ้น 12% เมื่อความเร็วของผู้สวมใส่มากกว่าหรือเท่ากับ 135/160",
       "effect4": "จะทำให้ผู้สวมใส่สร้าง DMG เพิ่มขึ้น 12%/18%"
     },
     {
+      "id": "32",
       "image": "./relic/Penacony, Land of the Dreams.png",
       "name": "Penacony, Land of the Dreams",
       "effect2": "ทำให้อัตราการฟื้นฟูพลังงานของผู้สวมใส่ เพิ่มขึ้น 5%",
       "effect4": "ทำให้ตัวละครอื่นในฝ่ายเรา ที่เป็นประเภทเดียวกับผู้สวมใส่ สร้าง DMG เพิ่มขึ้น 10%"
     },
     {
+      "id": "33",
       "image": "./relic/Sigonia, the Unclaimed Desolation.png",
       "name": "Sigonia, the Unclaimed Desolation",
       "effect2": "ทำให้อัตราคริติคอลของผู้สวมใส่เพิ่มขึ้น 4% เมื่อศัตรูเป้าหมายถูกกำจัด",
       "effect4": "DMG คริติคอลของผู้สวมใส่จะเพิ่มขึ้น 4% โดยสามารถซ้อนทับได้มากสุด 10 ชั้น"
     },
     {
+      "id": "34",
       "image": "./relic/Izumo Gensei and Takama Divine Realm.png",
       "name": "Izumo Gensei and Takama Divine Realm",
       "effect2": "ทำให้ ATK ของผู้สวมใส่เพิ่มขึ้น 12% เมื่อเข้าสู่การต่อสู้",
       "effect4": "หากมีเพื่อนร่วมทีมที่อยู่ Path เดียวกันกับผู้สวมใส่อย่างน้อย 1 คน อัตราคริติคอลของผู้สวมใส่จะเพิ่มขึ้น 12%"
     },
     {
+      "id": "35",
       "image": "./relic/Duran, Dynasty of Running Wolves.png",
       "name": "Duran, Dynasty of Running Wolves",
       "effect2": "เมื่อตัวละครฝ่ายเรา ปล่อยการโจมตีต่อเนื่อง ผู้สวมใส่จะได้รับ \"คุณความดี\" หนึ่งชั้น และจะซ้อนทับได้มากสุด 5 ชั้น",
       "effect4": "โดย \"คุณความดี\" แต่ละชั้น จะทำให้การโจมตีต่อเนื่องของผู้สวมใส่ สร้าง DMG เพิ่มขึ้น 5% เมื่อซ้อนทับถึง 5 ชั้นแล้ว จะทำให้ DMG คริติคอล ของผู้สวมใส่เพิ่มขึ้นอีก 25%"
     },
     {
+      "id": "36",
       "image": "./relic/Forge of the Kalpagni Lantern.png",
       "name": "Forge of the Kalpagni Lantern",
       "effect2": "ทำให้ความเร็วของผู้สวมใส่เพิ่มขึ้น 6%",
       "effect4": "เมื่อผู้สวมใส่โจมตีศัตรูเป้าหมาย ที่มีจุดอ่อนไฟ เอฟเฟกต์ทำลายล้างจะเพิ่มขึ้น 40% เป็นเวลา 1 เทิร์น"
     },
     {
+      "id": "37",
       "image": "./relic/Lushaka, the Sunken Seas.png",
       "name": "Lushaka, the Sunken Seas",
       "effect2": "ทำให้อัตราการฟื้นฟูพลังงานของผู้สวมใส่ เพิ่มขึ้น 5% หากผู้สวมใส่ ไม่ใช่ตัวละครตัวแรกในการจัดทีม",
       "effect4": "จะทำให้ ATK ของตัวละครตัวแรกในการจัดทีม เพิ่มขึ้น 12%"
     },
     {
+      "id": "38",
       "image": "./relic/The Wondrous BananAmusement Park.png",
       "name": "The Wondrous BananAmusement Park",
       "effect2": "ทำให้ DMG คริติคอลของผู้สวมใส่ เพิ่มขึ้น 16%",
