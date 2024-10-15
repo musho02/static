@@ -22,7 +22,7 @@
         Stat พื้นฐาน 2.เพิ่มความสามารถพิเศษให้กับตัวละครที่สวมใส่(แต่จะมีผลเมื่อตัวละครที่สวมใส่และ Light cone มี Path
         เดียวกัน)</p>
       <h2>Light cone 3 ★</h2>
-      <table id="LightCone3-table">
+      <table id="LightCone-table">
         <thead>
           <tr>
             <th>Light Cone</th>
@@ -101,7 +101,7 @@
       fetch('./data/light-cone.json')
         .then(response => response.json())
         .then(data => {
-          const tableBody = document.querySelector('#LightCone5-table tbody');
+          const tableBody = document.querySelector('#LightCone-table tbody');
           data.forEach(LightCone => {
             const row = document.createElement('tr');
 
