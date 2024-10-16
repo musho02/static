@@ -2,7 +2,7 @@
     {
         "id": "1",
         "star": "5",
-        "image": "./character/Acheron.png",
+        "image": "./characters/Acheron.png",
         "name": "Acheron",
         "path": "./paths/nihility.png",
         "element": "./elements/element_lightning.png",
