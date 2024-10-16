@@ -218,21 +218,33 @@
       <h2>3.เอฟเฟคเซ็ต</h2>
       <p>คือความสามารถเมื่อสวมใส่รีลิกส์หรือจักรวาลประดับครบ 2 หรือ 4
         ชิ้นโดยรีลิกส์และจักรวาลประดับแต่ละเซ็ตจะมีเอฟเฟคที่แตกต่างกันดังต่อไปนี้</p>
+        <h3>Relics</h3>
       <table id="relics-table">
         <thead>
           <tr>
-            <th>ภาพเซ็ตรีลิกส์/จักรวาลประดับ</th>
-            <th>ชื่อเซ็ตรีลิกส์/จักรวาลประดับ</th>
-            <th>เอฟเฟครีลิกส์/จักรวาลประดับ 2 ชิ้น</th>
-            <th>เอฟเฟครีลิกส์/จักรวาลประดับ 4 ชิ้น</th>
+            <th>ภาพ</th>
+            <th>ชื่อ</th>
+            <th>เอฟเฟคระดับ 2 ชิ้น</th>
+            <th>เอฟเฟคระดับ 4 ชิ้น</th>
           </tr>
         </thead>
         <tbody>
 
         </tbody>
       </table>
+      <h3>Planar Ornaments</h3>
+      <table id="ornaments-table">
+        <thead>
+          <tr>
+            <th>ภาพ</th>
+            <th>ชื่อ</th>
+            <th>เอฟเฟคระดับ 2 ชิ้น</th>
+          </tr>
+        </thead>
+        <tbody>
 
-
+        </tbody>
+      </table>
     </div>
 
     <!-- โหลด Sidebar -->
@@ -297,10 +309,45 @@
         .catch(error => console.error('Error loading relics:', error));
     }
 
+    function loadOrnaments() {
+      fetch('./data/ornaments.json')
+        .then(response => response.json())
+        .then(data => {
+          const tableBody = document.querySelector('#ornaments-table tbody');
+          data.forEach(ornament => {
+            const row = document.createElement('tr');
+
+            // เซลล์ภาพ
+            const imgCell = document.createElement('td');
+            const img = document.createElement('img');
+            img.src = ornament.image;
+            img.alt = ornament.name;
+            img.style.width = '100px'; // ปรับขนาดภาพตามต้องการ
+            img.style.borderRadius = '5px';
+            imgCell.appendChild(img);
+            row.appendChild(imgCell);
+
+            // เซลล์ชื่อ
+            const nameCell = document.createElement('td');
+            nameCell.textContent = ornament.name;
+            row.appendChild(nameCell);
+
+            // เซลล์เอฟเฟค 2 ชิ้น
+            const effect2Cell = document.createElement('td');
+            effect2Cell.textContent = ornament.effect2;
+            row.appendChild(effect2Cell);
+
+            tableBody.appendChild(row);
+          });
+        })
+        .catch(error => console.error('Error loading ornaments:', error));
+    }
+
     // เรียกใช้ฟังก์ชันเมื่อโหลดหน้าเว็บ
     document.addEventListener('DOMContentLoaded', () => {
       loadComponents();
       loadRelics();
+      loadOrnaments();
     });
   </script>
 
