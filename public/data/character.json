@@ -7,15 +7,15 @@
         "path": "./paths/nihility.png",
         "element": "./elements/element_lightning.png",
         "recommend": "CRIT Rate / CRIT DMG -> ATK% -> Speed",
-        "LightCone id 1": "",
-        "LightCone id 2": "",
-        "LightCone id 3": "",
-        "Rilic id 1": "",
-        "Rilic id 2": "",
-        "Rilic id 3": "",
-        "Cosmic id 1": "",
-        "Cosmic id 2": "",
-        "Cosmic id 3": ""
+        "LightCone id 1": "92",
+        "LightCone id 2": "94",
+        "LightCone id 3": "95",
+        "Rilic id 1": "17",
+        "Rilic id 2": "9",
+        "Rilic id 3": "8",
+        "Ornaments id 1": "34",
+        "Ornaments id 2": "26",
+        "Ornaments id 3": "33"
     },{
         "id": "",
         "star": "",
@@ -30,9 +30,9 @@
         "Rilic id 1": "",
         "Rilic id 2": "",
         "Rilic id 3": "",
-        "Cosmic id 1": "",
-        "Cosmic id 2": "",
-        "Cosmic id 3": ""
+        "Ornaments id 1": "",
+        "Ornaments id 2": "",
+        "Ornaments id 3": ""
     },{
         "id": "",
         "star": "",
@@ -47,8 +47,8 @@
         "Rilic id 1": "",
         "Rilic id 2": "",
         "Rilic id 3": "",
-        "Cosmic id 1": "",
-        "Cosmic id 2": "",
-        "Cosmic id 3": ""
+        "Ornaments id 1": "",
+        "Ornaments id 2": "",
+        "Ornaments id 3": ""
     }
 ]
