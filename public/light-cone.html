@@ -22,7 +22,7 @@
         Stat พื้นฐาน 2.เพิ่มความสามารถพิเศษให้กับตัวละครที่สวมใส่(แต่จะมีผลเมื่อตัวละครที่สวมใส่และ Light cone มี Path
         เดียวกัน)</p>
       <h2>Light cone 3 ★</h2>
-      <table id="LightCone-table">
+      <table id="LightCone-table-3">
         <thead>
           <tr>
             <th>Light Cone</th>
@@ -35,11 +35,11 @@
           </tr>
         </thead>
         <tbody>
-
+          <!-- ข้อมูลจะถูกเพิ่มโดย JavaScript -->
         </tbody>
       </table>
       <h2>Light cone 4 ★</h2>
-      <table id="LightCone4-table">
+      <table id="LightCone-table-4">
         <thead>
           <tr>
             <th>Light Cone</th>
@@ -52,11 +52,11 @@
           </tr>
         </thead>
         <tbody>
-
+          <!-- ข้อมูลจะถูกเพิ่มโดย JavaScript -->
         </tbody>
       </table>
       <h2>Light cone 5 ★</h2>
-      <table id="LightCone5-table">
+      <table id="LightCone-table-5">
         <thead>
           <tr>
             <th>Light Cone</th>
@@ -69,7 +69,7 @@
           </tr>
         </thead>
         <tbody>
-
+          <!-- ข้อมูลจะถูกเพิ่มโดย JavaScript -->
         </tbody>
       </table>
     </div>
@@ -82,9 +82,10 @@
   <div id="footer"></div>
 
   <!-- JavaScript เพื่อโหลดเนื้อหาของไฟล์ HTML ที่สร้างแยก -->
+  <!-- JavaScript เพื่อโหลดเนื้อหาของไฟล์ HTML และข้อมูล -->
   <script>
-     // ฟังก์ชันโหลด Navbar, Sidebar และ Footer
-     function loadComponents() {
+    // ฟังก์ชันโหลด Navbar, Sidebar และ Footer
+    function loadComponents() {
       Promise.all([
         fetch('./component/navbar.html').then(response => response.text()),
         fetch('./component/sidebar.html').then(response => response.text()),
@@ -96,53 +97,87 @@
       }).catch(error => console.error('Error loading components:', error));
     }
 
-    // ฟังก์ชันโหลดข้อมูลรีลิกส์จาก JSON และแสดงบนหน้าเว็บ
+    // ฟังก์ชันสร้างแถวตารางสำหรับ Light Cone
+    function createLightConeRow(LightCone) {
+      const row = document.createElement('tr');
+
+      // เซลล์ภาพ
+      const imgCell = document.createElement('td');
+      const img = document.createElement('img');
+      img.src = LightCone.image;
+      img.alt = LightCone.name;
+      img.style.width = '100px'; // ปรับขนาดภาพตามต้องการ
+      img.style.borderRadius = '5px';
+      imgCell.appendChild(img);
+      row.appendChild(imgCell);
+
+      // เซลล์ชื่อ
+      const nameCell = document.createElement('td');
+      nameCell.textContent = LightCone.name;
+      row.appendChild(nameCell);
+
+      // เซลล์ Path
+      const pathCell = document.createElement('td');
+      pathCell.textContent = LightCone.path;
+      row.appendChild(pathCell);
+
+      // เซลล์ความสามารถ
+      const effectCell = document.createElement('td');
+      effectCell.textContent = LightCone.effect;
+      row.appendChild(effectCell);
+
+      // เซลล์ HP
+      const HPCell = document.createElement('td');
+      HPCell.textContent = LightCone.HP;
+      row.appendChild(HPCell);
+
+      // เซลล์ ATK
+      const ATKCell = document.createElement('td');
+      ATKCell.textContent = LightCone.ATK;
+      row.appendChild(ATKCell);
+
+      // เซลล์ DEF
+      const DEFCell = document.createElement('td');
+      DEFCell.textContent = LightCone.DEF;
+      row.appendChild(DEFCell);
+
+      return row;
+    }
+
+    // ฟังก์ชันโหลดข้อมูล Light Cones จาก JSON และแสดงบนหน้าเว็บ
     function loadLightCones() {
       fetch('./data/light-cone.json')
         .then(response => response.json())
         .then(data => {
-          const tableBody = document.querySelector('#LightCone-table tbody');
-          data.forEach(LightCone => {
-            const row = document.createElement('tr');
+          // แยกข้อมูลตามระดับดาว
+          const star3 = data.filter(LightCone => LightCone.star === "3");
+          const star4 = data.filter(LightCone => LightCone.star === "4");
+          const star5 = data.filter(LightCone => LightCone.star === "5");
 
-            // เซลล์ภาพ
-            const imgCell = document.createElement('td');
-            const img = document.createElement('img');
-            img.src = LightCone.image;
-            img.alt = LightCone.name;
-            img.style.width = '100px'; // ปรับขนาดภาพตามต้องการ
-            img.style.borderRadius = '5px';
-            imgCell.appendChild(img);
-            row.appendChild(imgCell);
+          // อ้างอิงตารางแต่ละระดับดาว
+          const table3Body = document.querySelector('#LightCone-table-3 tbody');
+          const table4Body = document.querySelector('#LightCone-table-4 tbody');
+          const table5Body = document.querySelector('#LightCone-table-5 tbody');
 
-            const nameCell = document.createElement('td');
-            nameCell.textContent = LightCone.name;
-            row.appendChild(nameCell);
+          // เพิ่มแถวไปยังตาราง Star 3
+          star3.forEach(LightCone => {
+            const row = createLightConeRow(LightCone);
+            table3Body.appendChild(row);
+          });
 
-            const path = document.createElement('td');
-            path.textContent = LightCone.path;
-            row.appendChild(path);
+          // เพิ่มแถวไปยังตาราง Star 4
+          star4.forEach(LightCone => {
+            const row = createLightConeRow(LightCone);
+            table4Body.appendChild(row);
+          });
 
-            const effect = document.createElement('td');
-            effect.textContent = LightCone.effect;
-            row.appendChild(effect);
-            
-            const HP = document.createElement('td');
-            HP.textContent = LightCone.HP;
-            row.appendChild(HP);
-
-            const ATK = document.createElement('td');
-            ATK.textContent = LightCone.ATK;
-            row.appendChild(ATK);
-
-            const DEF = document.createElement('td');
-            DEF.textContent = LightCone.DEF;
-            row.appendChild(DEF);
-
-            tableBody.appendChild(row);
+          // เพิ่มแถวไปยังตาราง Star 5
+          star5.forEach(LightCone => {
+            const row = createLightConeRow(LightCone);
+            table5Body.appendChild(row);
           });
         })
-        .catch(error => console.error('Error loading relics:', error));
+        .catch(error => console.error('Error loading light-cones:', error));
     }
 
     // เรียกใช้ฟังก์ชันเมื่อโหลดหน้าเว็บ
