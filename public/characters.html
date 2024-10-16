@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ตัวละคร - Honkai: Star Rail Guide</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- โหลด Navbar -->
+  <div id="navbar"></div>
+
+  <!-- Main Content Area -->
+  <div class="main-content">
+    <!-- Left Content (เนื้อหาของแต่ละหน้า) -->
+    <div class="left-content">
+      <h1>ตัวละครทั้งหมด</h1>
+      <div class="characters-grid" id="characters-grid">
+        <!-- การ์ดตัวละครจะถูกเพิ่มโดย JavaScript -->
+      </div>
+    </div>
+
+    <!-- โหลด Sidebar -->
+    <div id="sidebar"></div>
+  </div>
+
+  <!-- โหลด Footer -->
+  <div id="footer"></div>
+
+  <!-- JavaScript เพื่อโหลดเนื้อหาของไฟล์ HTML และข้อมูล -->
+  <script>
+    // ฟังก์ชันโหลด Navbar, Sidebar และ Footer
+    function loadComponents() {
+      Promise.all([
+        fetch('./component/navbar.html').then(response => response.text()),
+        fetch('./component/sidebar.html').then(response => response.text()),
+        fetch('./component/footer.html').then(response => response.text())
+      ]).then(([navbar, sidebar, footer]) => {
+        document.getElementById('navbar').innerHTML = navbar;
+        document.getElementById('sidebar').innerHTML = sidebar;
+        document.getElementById('footer').innerHTML = footer;
+      }).catch(error => console.error('Error loading components:', error));
+    }
+
+    // ฟังก์ชันสร้างการ์ดตัวละคร
+    function createCharacterCard(character) {
+      const card = document.createElement('div');
+      card.classList.add('character-card');
+      card.style.backgroundImage = `url(${character.image})`;
+
+      // Overlay สำหรับชื่อ
+      const nameOverlay = document.createElement('div');
+      nameOverlay.classList.add('name-overlay');
+      nameOverlay.textContent = character.name;
+      card.appendChild(nameOverlay);
+
+      // ภาพ Path (ซ้ายบน)
+      const pathImg = document.createElement('img');
+      pathImg.src = character.path;
+      pathImg.alt = "Path";
+      pathImg.classList.add('path-img');
+      card.appendChild(pathImg);
+
+      // ภาพ Element (ขวาบน)
+      const elementImg = document.createElement('img');
+      elementImg.src = character.element;
+      elementImg.alt = "Element";
+      elementImg.classList.add('element-img');
+      card.appendChild(elementImg);
+
+      // เพิ่ม Event Listener สำหรับการคลิก
+      card.addEventListener('click', () => {
+        window.location.href = `guide.html?id=${character.id}`;
+      });
+
+      return card;
+    }
+
+    // ฟังก์ชันโหลดข้อมูลตัวละครจาก JSON และแสดงบนหน้าเว็บ
+    function loadCharacters() {
+      fetch('./data/character.json')
+        .then(response => response.json())
+        .then(data => {
+          const grid = document.getElementById('characters-grid');
+          data.forEach(character => {
+            const card = createCharacterCard(character);
+            grid.appendChild(card);
+          });
+        })
+        .catch(error => console.error('Error loading characters:', error));
+    }
+
+    // เรียกใช้ฟังก์ชันเมื่อโหลดหน้าเว็บ
+    document.addEventListener('DOMContentLoaded', () => {
+      loadComponents();
+      loadCharacters();
+    });
+  </script>
+
+</body>
+</html>

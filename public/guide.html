@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>การอัปเกรดตัวละคร - Honkai: Star Rail Guide</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- โหลด Navbar -->
+  <div id="navbar"></div>
+
+  <!-- Main Content Area -->
+  <div class="main-content">
+    <!-- Left Content (เนื้อหาของแต่ละหน้า) -->
+    <div class="left-content">
+      <h1>การอัปเกรดตัวละคร</h1>
+      <div id="guide-content">
+        <!-- ข้อมูลการอัปเกรดจะถูกเพิ่มโดย JavaScript -->
+      </div>
+    </div>
+
+    <!-- โหลด Sidebar -->
+    <div id="sidebar"></div>
+  </div>
+
+  <!-- โหลด Footer -->
+  <div id="footer"></div>
+
+  <!-- JavaScript เพื่อโหลดเนื้อหาของไฟล์ HTML และข้อมูล -->
+  <script>
+    // ฟังก์ชันโหลด Navbar, Sidebar และ Footer
+    function loadComponents() {
+      Promise.all([
+        fetch('./component/navbar.html').then(response => response.text()),
+        fetch('./component/sidebar.html').then(response => response.text()),
+        fetch('./component/footer.html').then(response => response.text())
+      ]).then(([navbar, sidebar, footer]) => {
+        document.getElementById('navbar').innerHTML = navbar;
+        document.getElementById('sidebar').innerHTML = sidebar;
+        document.getElementById('footer').innerHTML = footer;
+      }).catch(error => console.error('Error loading components:', error));
+    }
+
+    // ฟังก์ชันโหลดรายละเอียดการอัปเกรดของตัวละคร
+    function loadGuide() {
+      // ดึง parameter 'id' จาก URL
+      const params = new URLSearchParams(window.location.search);
+      const id = params.get('id');
+
+      if (!id) {
+        document.getElementById('guide-content').innerHTML = '<p>ไม่มีข้อมูลตัวละครที่เลือก</p>';
+        return;
+      }
+
+      fetch('./data/character.json')
+        .then(response => response.json())
+        .then(data => {
+          const character = data.find(c => c.id === id);
+          if (character) {
+            const guideContainer = document.getElementById('guide-content');
+            guideContainer.innerHTML = `
+              <div class="guide-card">
+                <img src="${character.image}" alt="${character.name}" class="guide-image">
+                <h2>${character.name}</h2>
+                <p><strong>Path:</strong> <img src="${character.path}" alt="Path" class="small-img"></p>
+                <p><strong>Element:</strong> <img src="${character.element}" alt="Element" class="small-img"></p>
+                <h3>การอัปเกรด</h3>
+                <p>${character.guide}</p>
+                <p><strong>HP:</strong> ${character.HP}</p>
+                <p><strong>ATK:</strong> ${character.ATK}</p>
+                <p><strong>DEF:</strong> ${character.DEF}</p>
+              </div>
+            `;
+          } else {
+            document.getElementById('guide-content').innerHTML = '<p>ไม่พบข้อมูลตัวละครที่คุณเลือก</p>';
+          }
+        })
+        .catch(error => console.error('Error loading guide:', error));
+    }
+
+    // เรียกใช้ฟังก์ชันเมื่อโหลดหน้าเว็บ
+    document.addEventListener('DOMContentLoaded', () => {
+      loadComponents();
+      loadGuide();
+    });
+  </script>
+
+</body>
+</html>
