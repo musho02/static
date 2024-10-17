@@ -296,7 +296,7 @@ body {
 .guide-container {
     display: flex;
     gap: 20px;
-    justify-content: space-around;
+    justify-content: flex-start;
     margin: 20px 0px;
 }
 
