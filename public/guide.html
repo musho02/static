@@ -64,58 +64,73 @@
             const guideContainer = document.getElementById('guide-content');
             guideContainer.innerHTML = `
               <div class="guide-container">
-                <!-- ส่วนข้อมูลตัวละคร -->
-                <div class="character-info">
-                  <img src="${character.image}" alt="${character.name}" class="character-image">
-                  <div class="character-details">
-                    <h2>${character.name}</h2>
-                    <p><strong>Path:</strong> <img src="${character.path}" alt="Path" class="path-image"></p>
-                    <p><strong>Element:</strong> <img src="${character.element}" alt="Element" class="element-image"></p>
-                  </div>
+    <!-- ส่วนข้อมูลตัวละคร -->
+    <div class="character-info">
+      <img src="${character.image}" alt="${character.name}" class="character-image">
+      <div class="character-details">
+        <h2>${character.name}</h2>
+        <p><strong>Path:</strong> <img src="${character.path}" alt="Path" class="path-image"></p>
+        <p><strong>Element:</strong> <img src="${character.element}" alt="Element" class="element-image"></p>
+      </div>
 
-                  <div class="character-description">
-                    <p>${character.CharDiscription}</p>
-                  </div>
-                </div>
+      <div class="character-description">
+        <p>${character.CharDiscription}</p>
+      </div>
+    </div>
+  </div>
 
-                <!-- ส่วนแนะนำอุปกรณ์สวมใส่ -->
-                <div class="relics-section">
-                  <h3>Relics</h3>
-                  <div class="equipment-list">
-                    <ul>
-                      <div class="equipment-item">
-                        <li><img src="./relic/${character['Rilic id 1']}.png" alt="relic"></li>
-                      </div>
-                      <div class="equipment-item">
-                        <li><img src="./relic/${character['Rilic id 2']}.png" alt="relic"></li>
-                      </div>
-                      <div class="equipment-item">
-                        <li><img src="./relic/${character['Rilic id 3']}.png" alt="relic"></li>
-                      </div>
-                    </ul>
-                  </div>
+  <!-- ส่วนแนะนำอุปกรณ์สวมใส่ -->
+  <div class="relics-section">
+    <h3>Relics</h3>
+    <div class="equipment-list">
+      <ul>
+        <div class="equipment-item">
+          <li><img src="./relic/${character['Rilic id 1']}.png" alt="relic"></li>
+        </div>
+        <div class="equipment-item">
+          <li><img src="./relic/${character['Rilic id 2']}.png" alt="relic"></li>
+        </div>
+        <div class="equipment-item">
+          <li><img src="./relic/${character['Rilic id 3']}.png" alt="relic"></li>
+        </div>
+      </ul>
+    </div>
 
-                  <h3>Ornaments</h3>
-                  <ul>
-                    <li><img src="./relic/${character['Ornaments id 1']}.png" alt="Ornaments"></li>
-                    <li><img src="./relic/${character['Ornaments id 2']}.png" alt="Ornaments"></li>
-                    <li><img src="./relic/${character['Ornaments id 3']}.png" alt="Ornaments"></li>
-                  </ul>
+    <h3>Ornaments</h3>
+    <div class="equipment-list">
+      <ul>
+        <div class="equipment-item">
+          <li><img src="./relic/${character['Ornaments id 1']}.png" alt="Ornaments"></li>
+        </div>
+        <div class="equipment-item">
+          <li><img src="./relic/${character['Ornaments id 2']}.png" alt="Ornaments"></li>
+        </div>
+        <div class="equipment-item">
+          <li><img src="./relic/${character['Ornaments id 3']}.png" alt="Ornaments"></li>
+        </div>
+      </ul>
+    </div>
+    <h3>Light Cones</h3>
+    <div class="equipment-list">
+      <ul>
+        <div class="equipment-item">
+          <li><img src="./LightCone/${character['LightCone id 1']}.png" alt="Light Cone"></li>
+        </div>
+        <div class="equipment-item">
+          <li><img src="./LightCone/${character['LightCone id 2']}.png" alt="Light Cone"></li>
+        </div>
+        <div class="equipment-item">
+          <li><img src="./LightCone/${character['LightCone id 3']}.png" alt="Light Cone"></li>
+        </div>
+      </ul>
+    </div>
+  </div>
 
-                  <h3>Light Cones</h3>
-                  <ul>
-                    <li><img src="./LightCone/${character['LightCone id 1']}.png" alt="Light Cone"></li>
-                    <li><img src="./LightCone/${character['LightCone id 2']}.png" alt="Light Cone"></li>
-                    <li><img src="./LightCone/${character['LightCone id 3']}.png" alt="Light Cone"></li>
-                  </ul>
-                </div>
-
-                <!-- ส่วนแนะนำการอัปเกรดค่า Stat -->
-                <div class="stat-upgrade-section">
-                  <h3>แนะนำการอัปเกรดค่า Stat</h3>
-                  <p><strong>Recommend Stats:</strong> ${character.recommend}</p>
-                </div>
-              </div>
+  <!-- ส่วนแนะนำการอัปเกรดค่า Stat -->
+  <div class="stat-upgrade-section">
+    <h3>แนะนำการอัปเกรดค่า Stat</h3>
+    <p><strong>Recommend Stats:</strong> ${character.recommend}</p>
+  </div>
             `;
           } else {
             document.getElementById('guide-content').innerHTML = '<p>ไม่พบข้อมูลตัวละครที่คุณเลือก</p>';
