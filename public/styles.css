@@ -298,6 +298,7 @@ body {
     gap: 20px;
     justify-content: space-around;
     margin: 20px;
+    background-color: rgb(14, 14, 105);
 }
 
 .character-info {
