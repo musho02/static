@@ -2,10 +2,14 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-image: url('./background/starrailBG.jpg'); /* ตั้งค่า URL ของภาพพื้นหลัง */
-    background-size: cover; /* ขยายภาพให้เต็มพื้นที่ */
-    background-position: center; /* จัดภาพให้อยู่กลาง */
-    background-repeat: no-repeat; /* ไม่ให้ภาพซ้ำ */
+    background-image: url('./background/starrailBG.jpg');
+    /* ตั้งค่า URL ของภาพพื้นหลัง */
+    background-size: cover;
+    /* ขยายภาพให้เต็มพื้นที่ */
+    background-position: center;
+    /* จัดภาพให้อยู่กลาง */
+    background-repeat: no-repeat;
+    /* ไม่ให้ภาพซ้ำ */
 }
 
 /* การออกแบบ Navbar */
@@ -50,60 +54,89 @@ body {
 }
 
 .image-container {
-    position: relative; /* ทำให้ container เป็น positioning context */
-    height: 500px; /* กำหนดความสูงของ container */
+    position: relative;
+    /* ทำให้ container เป็น positioning context */
+    height: 500px;
+    /* กำหนดความสูงของ container */
 }
 
 .responsive-image {
-    height: 500px; /* ความสูงคงที่ที่คุณต้องการ */
-    object-fit: cover; /* ไม่เปลี่ยนสัดส่วนภาพ ให้ครอบคลุมกรอบ */
-    border-radius: 10px; /* เพิ่มมุมโค้งให้ภาพ */
-    margin: 20px auto; /* เว้นระยะห่างด้านบนและล่าง และจัดกลางในแนวนอน */
-    display: block; /* ทำให้แน่ใจว่าภาพเป็น block-level element */
-    max-width: 100%; /* ขนาดภาพไม่เกินความกว้างของ container */
+    height: 500px;
+    /* ความสูงคงที่ที่คุณต้องการ */
+    object-fit: cover;
+    /* ไม่เปลี่ยนสัดส่วนภาพ ให้ครอบคลุมกรอบ */
+    border-radius: 10px;
+    /* เพิ่มมุมโค้งให้ภาพ */
+    margin: 20px auto;
+    /* เว้นระยะห่างด้านบนและล่าง และจัดกลางในแนวนอน */
+    display: block;
+    /* ทำให้แน่ใจว่าภาพเป็น block-level element */
+    max-width: 100%;
+    /* ขนาดภาพไม่เกินความกว้างของ container */
 }
 
 .responsive-image {
-    max-width: 100%; /* ขนาดภาพไม่เกินความกว้างของ container */
-    height: 500px; /* ความสูงคงที่ที่คุณต้องการ */
-    object-fit: cover; /* ไม่เปลี่ยนสัดส่วนภาพ ให้ครอบคลุมกรอบ */
-    border-radius: 10px; /* เพิ่มมุมโค้งให้ภาพ */
-    margin: 20px auto; /* เว้นระยะห่างด้านบนและล่าง และจัดกลางในแนวนอน */
-    display: block; /* ทำให้แน่ใจว่าภาพเป็น block-level element */
+    max-width: 100%;
+    /* ขนาดภาพไม่เกินความกว้างของ container */
+    height: 500px;
+    /* ความสูงคงที่ที่คุณต้องการ */
+    object-fit: cover;
+    /* ไม่เปลี่ยนสัดส่วนภาพ ให้ครอบคลุมกรอบ */
+    border-radius: 10px;
+    /* เพิ่มมุมโค้งให้ภาพ */
+    margin: 20px auto;
+    /* เว้นระยะห่างด้านบนและล่าง และจัดกลางในแนวนอน */
+    display: block;
+    /* ทำให้แน่ใจว่าภาพเป็น block-level element */
     overflow: hidden;
     position: relative;
 }
 
 @keyframes floatUpDown {
     0% {
-        transform: translateY(0); /* เริ่มต้นที่ตำแหน่งปกติ */
+        transform: translateY(0);
+        /* เริ่มต้นที่ตำแหน่งปกติ */
     }
+
     50% {
-        transform: translateY(-20px); /* ขยับขึ้น 20px */
+        transform: translateY(-20px);
+        /* ขยับขึ้น 20px */
     }
+
     100% {
-        transform: translateY(0); /* กลับสู่ตำแหน่งปกติ */
+        transform: translateY(0);
+        /* กลับสู่ตำแหน่งปกติ */
     }
 }
 
 .responsive-image-updown {
-    height: 100%; /* Fill container height */
-    object-fit: cover; /* Cover container */
-    border-radius: 10px; /* Rounded corners */
-    display: block; /* Block-level element */
-    margin: 0 auto; /* Center horizontally */
-    animation: floatUpDown 5s infinite alternate; /* Apply animation */
+    height: 100%;
+    /* Fill container height */
+    object-fit: cover;
+    /* Cover container */
+    border-radius: 10px;
+    /* Rounded corners */
+    display: block;
+    /* Block-level element */
+    margin: 0 auto;
+    /* Center horizontally */
+    animation: floatUpDown 5s infinite alternate;
+    /* Apply animation */
 }
 
 .overlay-image {
-    position: absolute; /* ทำให้ภาพนี้ซ้อนทับใน container */
-    height: 300px; /* ความสูงเต็มของ container */
-    opacity: 0.7; /* ปรับความโปร่งใส (โปร่งแสง) */
+    position: absolute;
+    /* ทำให้ภาพนี้ซ้อนทับใน container */
+    height: 300px;
+    /* ความสูงเต็มของ container */
+    opacity: 0.7;
+    /* ปรับความโปร่งใส (โปร่งแสง) */
 }
 
 /* Left Content (เนื้อหาหลักของแต่ละหน้า) */
 .left-content {
-    flex: 1; /* ปรับให้เนื้อหาหลักยืดหยุ่น */
+    flex: 1;
+    /* ปรับให้เนื้อหาหลักยืดหยุ่น */
     padding: 20px;
     background-color: #fff;
     border-radius: 10px;
@@ -112,20 +145,34 @@ body {
 
 /* Sidebar (ด้านขวา) */
 .sidebar {
-    position: fixed; /* ทำให้ sidebar ติดอยู่ที่ขอบจอ */
-    top: 60px; /* ปรับให้ด้านบนของ sidebar อยู่ใต้ Navbar (ตามความสูงของ navbar) */
-    right: 0; /* ติดขอบขวาของจอ */
-    width: 60px; /* ความกว้างของ sidebar เพื่อให้พอใส่โลโก้ */
-    height: calc(100% - 60px); /* ยาวตั้งแต่ Navbar จนถึงขอบล่างของจอ */
-    padding: 10px; /* เพิ่ม padding เล็กน้อย */
-    background-color: rgba(236, 240, 241, 0.8); /* สีโปร่งใส */
-    border-radius: 10px; /* มุมโค้ง */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* เงา */
-    display: flex; /* ใช้ flex เพื่อจัดแนวโลโก้ */
-    flex-direction: column; /* วางโลโก้ในแนวตั้ง */
-    align-items: center; /* จัดกลางแนวตั้ง */
-    justify-content: flex-start; /* จัดให้โลโก้อยู่ด้านบน */
-    z-index: 1000; /* ทำให้ sidebar อยู่เหนือเนื้อหาทั้งหมด */
+    position: fixed;
+    /* ทำให้ sidebar ติดอยู่ที่ขอบจอ */
+    top: 60px;
+    /* ปรับให้ด้านบนของ sidebar อยู่ใต้ Navbar (ตามความสูงของ navbar) */
+    right: 0;
+    /* ติดขอบขวาของจอ */
+    width: 60px;
+    /* ความกว้างของ sidebar เพื่อให้พอใส่โลโก้ */
+    height: calc(100% - 60px);
+    /* ยาวตั้งแต่ Navbar จนถึงขอบล่างของจอ */
+    padding: 10px;
+    /* เพิ่ม padding เล็กน้อย */
+    background-color: rgba(236, 240, 241, 0.8);
+    /* สีโปร่งใส */
+    border-radius: 10px;
+    /* มุมโค้ง */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* เงา */
+    display: flex;
+    /* ใช้ flex เพื่อจัดแนวโลโก้ */
+    flex-direction: column;
+    /* วางโลโก้ในแนวตั้ง */
+    align-items: center;
+    /* จัดกลางแนวตั้ง */
+    justify-content: flex-start;
+    /* จัดให้โลโก้อยู่ด้านบน */
+    z-index: 1000;
+    /* ทำให้ sidebar อยู่เหนือเนื้อหาทั้งหมด */
 }
 
 
@@ -152,16 +199,20 @@ body {
     .sidebar {
         margin-left: 0;
         margin-top: 20px;
-        position: static; /* เปลี่ยนเป็น static สำหรับมือถือ */
-        height: auto; /* ปรับความสูงตามเนื้อหา */
-        width: 100%; /* ทำให้ sidebar กว้างเต็มจอสำหรับมือถือ */
+        position: static;
+        /* เปลี่ยนเป็น static สำหรับมือถือ */
+        height: auto;
+        /* ปรับความสูงตามเนื้อหา */
+        width: 100%;
+        /* ทำให้ sidebar กว้างเต็มจอสำหรับมือถือ */
     }
 }
 
 /* Grid สำหรับการ์ดตัวละคร */
 .characters-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* ปรับขนาดตามหน้าจอ */
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    /* ปรับขนาดตามหน้าจอ */
     gap: 20px;
     margin-top: 20px;
 }
@@ -170,7 +221,8 @@ body {
 .character-card {
     position: relative;
     width: 100%;
-    padding-top: 140%; /* อัตราส่วนภาพ 5:7 */
+    padding-top: 140%;
+    /* อัตราส่วนภาพ 5:7 */
     background-size: cover;
     background-position: center;
     border-radius: 10px;
@@ -181,7 +233,7 @@ body {
 
 .character-card:hover {
     transform: translateY(-10px);
-    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
 
 /* Overlay สำหรับชื่อ */
@@ -233,7 +285,8 @@ body {
         font-size: 16px;
     }
 
-    .path-img, .element-img {
+    .path-img,
+    .element-img {
         width: 30px;
         height: 30px;
     }
@@ -245,74 +298,100 @@ body {
     gap: 20px;
     justify-content: space-around;
     margin: 20px;
-  }
-  
-  .character-info {
+}
+
+.character-info {
     display: flex;
-    flex-direction: row; /* Horizontal alignment */
+    flex-direction: row;
+    /* Horizontal alignment */
     align-items: flex-start;
     gap: 20px;
-  }
-  
-  .character-info img.character-image {
+}
+
+.character-info img.character-image {
     width: 250px;
     height: 400px;
     object-fit: cover;
     border-radius: 10px;
-  }
-  
-  .path-element-info {
+}
+
+.path-element-info {
     display: flex;
     flex-direction: column;
     justify-content: center;
     gap: 15px;
-  }
-  
-  .path-element-info img.path-image, 
-  .path-element-info img.element-image {
+}
+
+.path-element-info img.path-image,
+.path-element-info img.element-image {
     width: 60px;
     height: 60px;
     object-fit: contain;
-  }
-  
-  .character-info h2 {
+}
+
+.character-info h2 {
     text-align: center;
     margin-top: 10px;
     font-size: 24px;
-  }
-  
-  .character-description {
+}
+
+.character-description {
     margin: 20px;
     font-size: 18px;
     max-width: 600px;
-  }
-  
-  .relics-section, .stat-upgrade-section {
+}
+
+.relics-section,
+.stat-upgrade-section {
     margin-top: 30px;
-  }
-  
-  .relics-section h3, .stat-upgrade-section h3 {
+}
+
+.relics-section h3,
+.stat-upgrade-section h3 {
     font-size: 22px;
     margin-bottom: 10px;
-  }
-  
-  .equipment-list {
+}
+
+.equipment-list {
     display: flex;
-    justify-content: space-around;
     flex-wrap: wrap;
-  }
-  
-  .equipment-item {
+    /* ให้สามารถแสดงหลายแถวได้เมื่อหน้าจอแคบ */
+    justify-content: space-around;
+    /* ปรับระยะห่างระหว่างไอเท็ม */
+    margin: 20px 0;
+}
+
+.equipment-item {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 15px;
-  }
-  
-  .equipment-item img {
-    width: 80px; /* Small consistent size for all equipment */
+    margin: 10px;
+}
+
+.equipment-item img {
+    width: 80px;
     height: 80px;
     object-fit: contain;
-    border-radius: 5px;
-  }
-  
+}
+
+@media (max-width: 768px) {
+    .guide-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .character-details {
+        margin-left: 0;
+        margin-top: 20px;
+    }
+
+    .character-image {
+        width: 200px;
+        height: 320px;
+    }
+
+    .equipment-item img {
+        width: 60px;
+        height: 60px;
+    }
+}
