@@ -4,97 +4,109 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>ตัวละคร - Honkai: Star Rail Guide</title>
-  <link rel="stylesheet" href="styles.css">
+  <style>
+    .character-info, .equipment-section, .stat-upgrade-section {
+      margin-bottom: 20px;
+    }
+    .character-info img {
+      width: 150px;
+      height: 150px;
+    }
+    .equipment-section img {
+      width: 100px;
+      height: 100px;
+      margin-right: 10px;
+    }
+    .stat-upgrade {
+      font-weight: bold;
+    }
+    .equipment-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 10px;
+    }
+  </style>
 </head>
 <body>
 
   <!-- โหลด Navbar -->
   <div id="navbar"></div>
 
-  <!-- Main Content Area -->
-  <div class="main-content">
-    <!-- Left Content (เนื้อหาของแต่ละหน้า) -->
-    <div class="left-content">
-      <h1>ตัวละครทั้งหมด</h1>
-      <div class="characters-grid" id="characters-grid">
-        <!-- การ์ดตัวละครจะถูกเพิ่มโดย JavaScript -->
-      </div>
-    </div>
-
-    <!-- โหลด Sidebar -->
-    <div id="sidebar"></div>
+  <div class="character-info">
+    <h2 id="character-name"></h2>
+    <img id="character-image" src="" alt="Character Image">
+    <img id="character-path" src="" alt="Character Path">
+    <img id="character-element" src="" alt="Character Element">
+    <p id="character-description"></p>
   </div>
 
-  <!-- โหลด Footer -->
-  <div id="footer"></div>
+  <div class="equipment-section">
+    <h3>Recommended Equipment</h3>
+    <div class="equipment-grid">
+      <div>
+        <h4>Light Cone</h4>
+        <img id="light-cone-1" src="" alt="Light Cone 1">
+        <img id="light-cone-2" src="" alt="Light Cone 2">
+        <img id="light-cone-3" src="" alt="Light Cone 3">
+      </div>
+      <div>
+        <h4>Rilics</h4>
+        <img id="rilic-1" src="" alt="Rilic 1">
+        <img id="rilic-2" src="" alt="Rilic 2">
+        <img id="rilic-3" src="" alt="Rilic 3">
+      </div>
+      <div>
+        <h4>Ornaments</h4>
+        <img id="ornament-1" src="" alt="Ornament 1">
+        <img id="ornament-2" src="" alt="Ornament 2">
+        <img id="ornament-3" src="" alt="Ornament 3">
+      </div>
+    </div>
+  </div>
+
+  <div class="stat-upgrade-section">
+    <h3>Stat Upgrade Recommendation</h3>
+    <p id="stat-upgrade" class="stat-upgrade"></p>
+  </div>
 
   <!-- JavaScript เพื่อโหลดเนื้อหาของไฟล์ HTML และข้อมูล -->
   <script>
-    // ฟังก์ชันโหลด Navbar, Sidebar และ Footer
-    function loadComponents() {
-      Promise.all([
-        fetch('./component/navbar.html').then(response => response.text()),
-        fetch('./component/sidebar.html').then(response => response.text()),
-        fetch('./component/footer.html').then(response => response.text())
-      ]).then(([navbar, sidebar, footer]) => {
-        document.getElementById('navbar').innerHTML = navbar;
-        document.getElementById('sidebar').innerHTML = sidebar;
-        document.getElementById('footer').innerHTML = footer;
-      }).catch(error => console.error('Error loading components:', error));
-    }
+    document.addEventListener('DOMContentLoaded', () => {
+      const params = new URLSearchParams(window.location.search);
+      const characterId = params.get('id'); // สมมติว่ามี id ของตัวละครใน query parameter
 
-    // ฟังก์ชันสร้างการ์ดตัวละคร
-    function createCharacterCard(character) {
-      const card = document.createElement('div');
-      card.classList.add('character-card');
-      card.style.backgroundImage = `url(${character.image})`;
-
-      // Overlay สำหรับชื่อ
-      const nameOverlay = document.createElement('div');
-      nameOverlay.classList.add('name-overlay');
-      nameOverlay.textContent = character.name;
-      card.appendChild(nameOverlay);
-
-      // ภาพ Path (ซ้ายบน)
-      const pathImg = document.createElement('img');
-      pathImg.src = character.path;
-      pathImg.alt = "Path";
-      pathImg.classList.add('path-img');
-      card.appendChild(pathImg);
-
-      // ภาพ Element (ขวาบน)
-      const elementImg = document.createElement('img');
-      elementImg.src = character.element;
-      elementImg.alt = "Element";
-      elementImg.classList.add('element-img');
-      card.appendChild(elementImg);
-
-      // เพิ่ม Event Listener สำหรับการคลิก
-      card.addEventListener('click', () => {
-        window.location.href = `guide.html?id=${character.id}`;
-      });
-
-      return card;
-    }
-
-    // ฟังก์ชันโหลดข้อมูลตัวละครจาก JSON และแสดงบนหน้าเว็บ
-    function loadCharacters() {
+      // ฟังก์ชันโหลดข้อมูลจาก character.json
       fetch('./data/character.json')
         .then(response => response.json())
         .then(data => {
-          const grid = document.getElementById('characters-grid');
-          data.forEach(character => {
-            const card = createCharacterCard(character);
-            grid.appendChild(card);
-          });
-        })
-        .catch(error => console.error('Error loading characters:', error));
-    }
+          const character = data.find(c => c.id === characterId); // หา character ตาม id
+          
+          if (character) {
+            // ส่วนที่ 1: ข้อมูลตัวละคร
+            document.getElementById('character-name').textContent = character.name;
+            document.getElementById('character-image').src = character.image;
+            document.getElementById('character-path').src = character.path;
+            document.getElementById('character-element').src = character.element;
+            document.getElementById('character-description').textContent = character.CharDiscription;
 
-    // เรียกใช้ฟังก์ชันเมื่อโหลดหน้าเว็บ
-    document.addEventListener('DOMContentLoaded', () => {
-      loadComponents();
-      loadCharacters();
+            // ส่วนที่ 2: แนะนำอุปกรณ์สวมใส่
+            document.getElementById('light-cone-1').src = `./LightCone/${character['LightCone id 1']}.png`;
+            document.getElementById('light-cone-2').src = `./LightCone/${character['LightCone id 2']}.png`;
+            document.getElementById('light-cone-3').src = `./LightCone/${character['LightCone id 3']}.png`;
+
+            document.getElementById('rilic-1').src = `./Rilics/${character['Rilic id 1']}.png`;
+            document.getElementById('rilic-2').src = `./Rilics/${character['Rilic id 2']}.png`;
+            document.getElementById('rilic-3').src = `./Rilics/${character['Rilic id 3']}.png`;
+
+            document.getElementById('ornament-1').src = `./Ornaments/${character['Ornaments id 1']}.png`;
+            document.getElementById('ornament-2').src = `./Ornaments/${character['Ornaments id 2']}.png`;
+            document.getElementById('ornament-3').src = `./Ornaments/${character['Ornaments id 3']}.png`;
+
+            // ส่วนที่ 3: แนะนำการอัพเกรดค่า Stat
+            document.getElementById('stat-upgrade').textContent = character.recommend;
+          }
+        })
+        .catch(error => console.error('Error loading character:', error));
     });
   </script>
 

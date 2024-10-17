@@ -15,7 +15,8 @@
         "Rilic id 3": "8",
         "Ornaments id 1": "14",
         "Ornaments id 2": "6",
-        "Ornaments id 3": "13"
+        "Ornaments id 3": "13",
+        "CharDiscription": "Archeron มีจุดเด่นที่อัลติเมทซึ่งสามารถสร้าง Damage ได้มหาศาล ดังนั้นจึงควรเน้นไปที่การหาค่า CRIT Rate และ CRIT DMG เป็นสำคัญ แต่จะสามารถปลดปล่อยได้เมื่อศัตรูได้รับ Debuff ถึงระดับหนึ่งเท่านั้น ทำให้ควรเล่นกับทีมที่สามารถสร้าง Debuff ให้กับศัตรูได้บ่อยๆ"
     },{
         "id": "2",
         "star": "5",
@@ -73,7 +74,7 @@
         "image": "./characters/Aventurine.png",
         "name": "Aventurine",
         "path": "./paths/preservation.png",
-        "element": "./elements/element.png",
+        "element": "./elements/element_imaginary.png",
         "recommend": "DEF% -> CRIT DMG -> Speed / DEF",
         "LightCone id 1": "103",
         "LightCone id 2": "104",
@@ -136,22 +137,22 @@
         "Ornaments id 2": "11",
         "Ornaments id 3": "6"
     },{
-        "id": "",
-        "star": "",
-        "image": "./characters/TEST.png",
-        "name": "TEST",
-        "path": "./paths/PATH.png",
-        "element": "./elements/element.png",
-        "recommend": "CRIT Rate / CRIT DMG -> ATK% -> Speed",
-        "LightCone id 1": "",
-        "LightCone id 2": "",
-        "LightCone id 3": "",
-        "Rilic id 1": "",
-        "Rilic id 2": "",
-        "Rilic id 3": "",
-        "Ornaments id 1": "",
-        "Ornaments id 2": "",
-        "Ornaments id 3": ""
+        "id": "9",
+        "star": "5",
+        "image": "./characters/Boothill.png",
+        "name": "Boothill",
+        "path": "./paths/hunt.png",
+        "element": "./elements/element_physical.png",
+        "recommend": "Break Effect -> Speed -> CRIT Rate / CRIT DMG",
+        "LightCone id 1": "77",
+        "LightCone id 2": "25",
+        "LightCone id 3": "28",
+        "Rilic id 1": "11",
+        "Rilic id 2": "19",
+        "Rilic id 3": "18",
+        "Ornaments id 1": "7",
+        "Ornaments id 2": "1",
+        "Ornaments id 3": "14"
     },{
         "id": "",
         "star": "",
