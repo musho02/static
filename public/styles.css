@@ -297,7 +297,7 @@ body {
     display: flex;
     gap: 20px;
     justify-content: space-around;
-    margin: 20px;
+    margin: 20px 0px;
 }
 
 .character-info {
