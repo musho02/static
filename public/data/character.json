@@ -33,7 +33,8 @@
         "Rilic id 3": "Messenger Traversing Hackerspace",
         "Ornaments id 1": "Firmament Frontline Glamoth",
         "Ornaments id 2": "Sigonia, the Unclaimed Desolation",
-        "Ornaments id 3": "Rutilant Arena"
+        "Ornaments id 3": "Rutilant Arena",
+        "CharDiscription": "Argenti คือตัวละครที่โดดเด่นในด้านการโจมตีหมู่ แต่มีข้อเสียที่ต้องใช้พลังงานเยอะ ดังนั้นจึงควรเน้นไปที่การหาค่า CRIT Rate และ CRIT DMG เป็นสำคัญ และควรหาทีมที่สามารถฟื้นฟูพลังงานให้ Argenti ได้"
     },{
         "id": "3",
         "star": "4",
@@ -50,7 +51,8 @@
         "Rilic id 3": "Longevous Disciple",
         "Ornaments id 1": "Firmament Frontline Glamoth",
         "Ornaments id 2": "Rutilant Arena",
-        "Ornaments id 3": "Space Sealing Station"
+        "Ornaments id 3": "Space Sealing Station",
+        "CharDiscription": "Arlan คือตัวละครดาเมจที่จะสามารถสร้าง Damage ได้แรงขึ้นเมื่อ HP ต่ำ ดังนั้นจึงควรเน้นไปที่การหาค่า CRIT Rate และ CRIT DMG เป็นสำคัญ และควรหาทีมที่สามารถมอบโล่ให้ Arlan ได้"
     },{
         "id": "4",
         "star": "4",
@@ -67,7 +69,8 @@
         "Rilic id 3": "Musketeer of Wild Wheat",
         "Ornaments id 1": "Fleet of the Ageless",
         "Ornaments id 2": "Sprightly Vonwacq",
-        "Ornaments id 3": "Lushaka, the Sunken Seas"
+        "Ornaments id 3": "Lushaka, the Sunken Seas",
+        "CharDiscription": "Asta เป็นตัวซัพพอร์ตที่สามารถเร่งความเร็วทั้งทีมได้ด้วยอัลติเมท และต้องใช้สกิลโจมตีเพื่อเพิ่มพลังโจมตีให้ทั้งทีมที่เป็นธาตุไฟ ดังนั้นจึงควรเน้นไปที่การหาค่า CRIT Rate และ CRIT DMG เป็นสำคัญ เพื่อให้สกิลโจมตีเป็น Damage เพิ่มเติมให้กับทีม"
     },{
         "id": "5",
         "star": "5",
@@ -84,7 +87,8 @@
         "Rilic id 3": "Pioneer Diver of Dead Waters",
         "Ornaments id 1": "Broken Keel",
         "Ornaments id 2": "Penacony, Land of the Dreams",
-        "Ornaments id 3": "Duran, Dynasty of Running Wolves"
+        "Ornaments id 3": "Duran, Dynasty of Running Wolves",
+        "CharDiscription": "Aventurine เป็นตัวแทงค์ที่สามารถโจมตีต่อเนื่องได้ และมอบโล่ให้ทั้งทีมได้จากการโจมตีต่อเนื่อง ดังนั้นจึงควรเน้นไปที่การหาค่า DEF เป็นสำคัญ และสามารถหาค่า CRIT Rate และ CRIT DMG เพิ่มเติมเพื่อให้สกิลโจมตีเป็น Damage เพิ่มเติมให้กับทีม"
     },{
         "id": "6",
         "star": "5",
@@ -101,7 +105,8 @@
         "Rilic id 3": "Longevous Disciple",
         "Ornaments id 1": "Lushaka, the Sunken Seas",
         "Ornaments id 2": "Fleet of the Ageless",
-        "Ornaments id 3": "Broken Keel"
+        "Ornaments id 3": "Broken Keel",
+        "CharDiscription": "Bailu เป็นตัวฮีลที่มีจุดเด่นที่การชุบชีวิตเพื่อได้ 1 ครั้ง ควรเน้นไปที่การหาค่า HP% / HP เพื่อเพิ่มประสิทธิภาพการฮีล"
     },{
         "id": "7",
         "star": "5",
@@ -118,7 +123,8 @@
         "Rilic id 3": "Eagle of Twilight Line",
         "Ornaments id 1": "Pan-Cosmic Commercial Enterprise",
         "Ornaments id 2": "Space Sealing Station",
-        "Ornaments id 3": "Firmament Frontline Glamoth"
+        "Ornaments id 3": "Firmament Frontline Glamoth",
+        "CharDiscription": "Black Swan เป็นตัวละครที่มีจุดเด่นที่ความเสียหายต่อเนื่อง และได้เอฟเฟคทำลายล้างเพิ่มจากค่า Effect Hit Rate ควรเน้นไปที่การหาค่า Effect Hit Rate เพื่อเพิ่ม Damage ของความเสียหายต่อเนื่องและเพิ่มโอกาศติดความเสียหายต่อเนื่อง"
     },{
         "id": "8",
         "star": "5",
@@ -135,7 +141,8 @@
         "Rilic id 3": "Messenger Traversing Hackerspace",
         "Ornaments id 1": "Rutilant Arena",
         "Ornaments id 2": "Firmament Frontline Glamoth",
-        "Ornaments id 3": "Inert Salsotto"
+        "Ornaments id 3": "Inert Salsotto",
+        "CharDiscription": "Blade เป็นตัวละครที่มีจุดเด่นที่สามารถทำ Damage ไปพร้อมกับฮีลตัวเองไปได้ ควรเน้นไปที่การหาค่า CRIT Rate / CRIT DMG และ HP เพื่อเพิ่ม Damage และทำให้สามารถรับ Damage ได้มากขึ้น"
     },{
         "id": "9",
         "star": "5",
@@ -152,7 +159,8 @@
         "Rilic id 3": "Watchmaker, Master of Dream Machinations",
         "Ornaments id 1": "Talia - Kingdom of Banditry",
         "Ornaments id 2": "Space Sealing Station",
-        "Ornaments id 3": "Izumo Gensei and Takama Divine Realm"
+        "Ornaments id 3": "Izumo Gensei and Takama Divine Realm",
+        "CharDiscription": " เป็นตัวละครที่มีจุดเด่นที่สามารถ ควรเน้นไปที่การหาค่า"
     },{
         "id": "",
         "star": "",
@@ -169,7 +177,8 @@
         "Rilic id 3": "",
         "Ornaments id 1": "",
         "Ornaments id 2": "",
-        "Ornaments id 3": ""
+        "Ornaments id 3": "",
+        "CharDiscription": " เป็นตัวละครที่มีจุดเด่นที่สามารถ ควรเน้นไปที่การหาค่า"
     },{
         "id": "",
         "star": "",
@@ -186,7 +195,8 @@
         "Rilic id 3": "",
         "Ornaments id 1": "",
         "Ornaments id 2": "",
-        "Ornaments id 3": ""
+        "Ornaments id 3": "",
+        "CharDiscription": " เป็นตัวละครที่มีจุดเด่นที่สามารถ ควรเน้นไปที่การหาค่า"
     },{
         "id": "",
         "star": "",
@@ -203,7 +213,8 @@
         "Rilic id 3": "",
         "Ornaments id 1": "",
         "Ornaments id 2": "",
-        "Ornaments id 3": ""
+        "Ornaments id 3": "",
+        "CharDiscription": " เป็นตัวละครที่มีจุดเด่นที่สามารถ ควรเน้นไปที่การหาค่า"
     },{
         "id": "",
         "star": "",
@@ -220,7 +231,8 @@
         "Rilic id 3": "",
         "Ornaments id 1": "",
         "Ornaments id 2": "",
-        "Ornaments id 3": ""
+        "Ornaments id 3": "",
+        "CharDiscription": " เป็นตัวละครที่มีจุดเด่นที่สามารถ ควรเน้นไปที่การหาค่า"
     },{
         "id": "",
         "star": "",
@@ -237,7 +249,8 @@
         "Rilic id 3": "",
         "Ornaments id 1": "",
         "Ornaments id 2": "",
-        "Ornaments id 3": ""
+        "Ornaments id 3": "",
+        "CharDiscription": " เป็นตัวละครที่มีจุดเด่นที่สามารถ ควรเน้นไปที่การหาค่า"
     },{
         "id": "",
         "star": "",
@@ -254,7 +267,8 @@
         "Rilic id 3": "",
         "Ornaments id 1": "",
         "Ornaments id 2": "",
-        "Ornaments id 3": ""
+        "Ornaments id 3": "",
+        "CharDiscription": " เป็นตัวละครที่มีจุดเด่นที่สามารถ ควรเน้นไปที่การหาค่า"
     },{
         "id": "",
         "star": "",
@@ -271,7 +285,8 @@
         "Rilic id 3": "",
         "Ornaments id 1": "",
         "Ornaments id 2": "",
-        "Ornaments id 3": ""
+        "Ornaments id 3": "",
+        "CharDiscription": " เป็นตัวละครที่มีจุดเด่นที่สามารถ ควรเน้นไปที่การหาค่า"
     },{
         "id": "",
         "star": "",
@@ -288,7 +303,8 @@
         "Rilic id 3": "",
         "Ornaments id 1": "",
         "Ornaments id 2": "",
-        "Ornaments id 3": ""
+        "Ornaments id 3": "",
+        "CharDiscription": " เป็นตัวละครที่มีจุดเด่นที่สามารถ ควรเน้นไปที่การหาค่า"
     },{
         "id": "",
         "star": "",
@@ -305,7 +321,8 @@
         "Rilic id 3": "",
         "Ornaments id 1": "",
         "Ornaments id 2": "",
-        "Ornaments id 3": ""
+        "Ornaments id 3": "",
+        "CharDiscription": " เป็นตัวละครที่มีจุดเด่นที่สามารถ ควรเน้นไปที่การหาค่า"
     },{
         "id": "",
         "star": "",
@@ -322,7 +339,8 @@
         "Rilic id 3": "",
         "Ornaments id 1": "",
         "Ornaments id 2": "",
-        "Ornaments id 3": ""
+        "Ornaments id 3": "",
+        "CharDiscription": " เป็นตัวละครที่มีจุดเด่นที่สามารถ ควรเน้นไปที่การหาค่า"
     },{
         "id": "",
         "star": "",
@@ -339,7 +357,8 @@
         "Rilic id 3": "",
         "Ornaments id 1": "",
         "Ornaments id 2": "",
-        "Ornaments id 3": ""
+        "Ornaments id 3": "",
+        "CharDiscription": " เป็นตัวละครที่มีจุดเด่นที่สามารถ ควรเน้นไปที่การหาค่า"
     },{
         "id": "",
         "star": "",
@@ -356,7 +375,8 @@
         "Rilic id 3": "",
         "Ornaments id 1": "",
         "Ornaments id 2": "",
-        "Ornaments id 3": ""
+        "Ornaments id 3": "",
+        "CharDiscription": " เป็นตัวละครที่มีจุดเด่นที่สามารถ ควรเน้นไปที่การหาค่า"
     },{
         "id": "",
         "star": "",
@@ -373,7 +393,8 @@
         "Rilic id 3": "",
         "Ornaments id 1": "",
         "Ornaments id 2": "",
-        "Ornaments id 3": ""
+        "Ornaments id 3": "",
+        "CharDiscription": " เป็นตัวละครที่มีจุดเด่นที่สามารถ ควรเน้นไปที่การหาค่า"
     },{
         "id": "",
         "star": "",
@@ -390,7 +411,8 @@
         "Rilic id 3": "",
         "Ornaments id 1": "",
         "Ornaments id 2": "",
-        "Ornaments id 3": ""
+        "Ornaments id 3": "",
+        "CharDiscription": " เป็นตัวละครที่มีจุดเด่นที่สามารถ ควรเน้นไปที่การหาค่า"
     },{
         "id": "",
         "star": "",
@@ -407,7 +429,8 @@
         "Rilic id 3": "",
         "Ornaments id 1": "",
         "Ornaments id 2": "",
-        "Ornaments id 3": ""
+        "Ornaments id 3": "",
+        "CharDiscription": " เป็นตัวละครที่มีจุดเด่นที่สามารถ ควรเน้นไปที่การหาค่า"
     },{
         "id": "",
         "star": "",
@@ -424,7 +447,8 @@
         "Rilic id 3": "",
         "Ornaments id 1": "",
         "Ornaments id 2": "",
-        "Ornaments id 3": ""
+        "Ornaments id 3": "",
+        "CharDiscription": " เป็นตัวละครที่มีจุดเด่นที่สามารถ ควรเน้นไปที่การหาค่า"
     },{
         "id": "",
         "star": "",
@@ -441,7 +465,8 @@
         "Rilic id 3": "",
         "Ornaments id 1": "",
         "Ornaments id 2": "",
-        "Ornaments id 3": ""
+        "Ornaments id 3": "",
+        "CharDiscription": " เป็นตัวละครที่มีจุดเด่นที่สามารถ ควรเน้นไปที่การหาค่า"
     },{
         "id": "",
         "star": "",
@@ -458,7 +483,8 @@
         "Rilic id 3": "",
         "Ornaments id 1": "",
         "Ornaments id 2": "",
-        "Ornaments id 3": ""
+        "Ornaments id 3": "",
+        "CharDiscription": " เป็นตัวละครที่มีจุดเด่นที่สามารถ ควรเน้นไปที่การหาค่า"
     },{
         "id": "",
         "star": "",
@@ -475,7 +501,8 @@
         "Rilic id 3": "",
         "Ornaments id 1": "",
         "Ornaments id 2": "",
-        "Ornaments id 3": ""
+        "Ornaments id 3": "",
+        "CharDiscription": " เป็นตัวละครที่มีจุดเด่นที่สามารถ ควรเน้นไปที่การหาค่า"
     },{
         "id": "",
         "star": "",
@@ -492,7 +519,8 @@
         "Rilic id 3": "",
         "Ornaments id 1": "",
         "Ornaments id 2": "",
-        "Ornaments id 3": ""
+        "Ornaments id 3": "",
+        "CharDiscription": " เป็นตัวละครที่มีจุดเด่นที่สามารถ ควรเน้นไปที่การหาค่า"
     },{
         "id": "",
         "star": "",
@@ -509,7 +537,8 @@
         "Rilic id 3": "",
         "Ornaments id 1": "",
         "Ornaments id 2": "",
-        "Ornaments id 3": ""
+        "Ornaments id 3": "",
+        "CharDiscription": " เป็นตัวละครที่มีจุดเด่นที่สามารถ ควรเน้นไปที่การหาค่า"
     },{
         "id": "",
         "star": "",
@@ -526,7 +555,8 @@
         "Rilic id 3": "",
         "Ornaments id 1": "",
         "Ornaments id 2": "",
-        "Ornaments id 3": ""
+        "Ornaments id 3": "",
+        "CharDiscription": " เป็นตัวละครที่มีจุดเด่นที่สามารถ ควรเน้นไปที่การหาค่า"
     },{
         "id": "",
         "star": "",
@@ -543,7 +573,8 @@
         "Rilic id 3": "",
         "Ornaments id 1": "",
         "Ornaments id 2": "",
-        "Ornaments id 3": ""
+        "Ornaments id 3": "",
+        "CharDiscription": " เป็นตัวละครที่มีจุดเด่นที่สามารถ ควรเน้นไปที่การหาค่า"
     },{
         "id": "",
         "star": "",
@@ -560,7 +591,8 @@
         "Rilic id 3": "",
         "Ornaments id 1": "",
         "Ornaments id 2": "",
-        "Ornaments id 3": ""
+        "Ornaments id 3": "",
+        "CharDiscription": " เป็นตัวละครที่มีจุดเด่นที่สามารถ ควรเน้นไปที่การหาค่า"
     },{
         "id": "",
         "star": "",
@@ -577,6 +609,7 @@
         "Rilic id 3": "",
         "Ornaments id 1": "",
         "Ornaments id 2": "",
-        "Ornaments id 3": ""
+        "Ornaments id 3": "",
+        "CharDiscription": " เป็นตัวละครที่มีจุดเด่นที่สามารถ ควรเน้นไปที่การหาค่า"
     }
 ]
