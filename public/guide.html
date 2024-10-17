@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="th">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>การอัปเกรดตัวละคร - Honkai: Star Rail Guide</title>
   <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
 
   <!-- โหลด Navbar -->
@@ -61,25 +63,38 @@
           if (character) {
             const guideContainer = document.getElementById('guide-content');
             guideContainer.innerHTML = `
-              <div class="guide-card">
+              <div class="guide-container">
                 <!-- ส่วนข้อมูลตัวละคร -->
                 <div class="character-info">
-                  <img src="${character.image}" alt="${character.name}" class="guide-image">
-                  <h2>${character.name}</h2>
-                  <p><strong>Path:</strong> <img src="${character.path}" alt="Path" class="small-img"></p>
-                  <p><strong>Element:</strong> <img src="${character.element}" alt="Element" class="small-img"></p>
-                  <p>${character.CharDiscription}</p>
+                  <img src="${character.image}" alt="${character.name}" class="character-image">
+                  <div class="character-details">
+                    <h2>${character.name}</h2>
+                    <p><strong>Path:</strong> <img src="${character.path}" alt="Path" class="path-image"></p>
+                    <p><strong>Element:</strong> <img src="${character.element}" alt="Element" class="element-image"></p>
+                  </div>
+
+                  <div class="character-description">
+                    <p>${character.CharDiscription}</p>
+                  </div>
                 </div>
 
                 <!-- ส่วนแนะนำอุปกรณ์สวมใส่ -->
-                <div class="equipment-info">
+                <div class="relics-section">
                   <h3>Relics</h3>
-                  <ul>
-                    <li><img src="./relic/${character['Rilic id 1']}.png" alt="relic"></li>
-                    <li><img src="./relic/${character['Rilic id 2']}.png" alt="relic"></li>
-                    <li><img src="./relic/${character['Rilic id 3']}.png" alt="relic"></li>
-                  </ul>
-                  
+                  <div class="equipment-list">
+                    <ul>
+                      <div class="equipment-item">
+                        <li><img src="./relic/${character['Rilic id 1']}.png" alt="relic"></li>
+                      </div>
+                      <div class="equipment-item">
+                        <li><img src="./relic/${character['Rilic id 2']}.png" alt="relic"></li>
+                      </div>
+                      <div class="equipment-item">
+                        <li><img src="./relic/${character['Rilic id 3']}.png" alt="relic"></li>
+                      </div>
+                    </ul>
+                  </div>
+
                   <h3>Ornaments</h3>
                   <ul>
                     <li><img src="./relic/${character['Ornaments id 1']}.png" alt="Ornaments"></li>
@@ -96,7 +111,7 @@
                 </div>
 
                 <!-- ส่วนแนะนำการอัปเกรดค่า Stat -->
-                <div class="stat-upgrade">
+                <div class="stat-upgrade-section">
                   <h3>แนะนำการอัปเกรดค่า Stat</h3>
                   <p><strong>Recommend Stats:</strong> ${character.recommend}</p>
                 </div>
@@ -117,4 +132,5 @@
   </script>
 
 </body>
+
 </html>

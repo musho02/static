@@ -239,4 +239,80 @@ body {
     }
 }
 
-
+/* Styles for Guide page */
+.guide-container {
+    display: flex;
+    gap: 20px;
+    justify-content: space-around;
+    margin: 20px;
+  }
+  
+  .character-info {
+    display: flex;
+    flex-direction: row; /* Horizontal alignment */
+    align-items: flex-start;
+    gap: 20px;
+  }
+  
+  .character-info img.character-image {
+    width: 250px;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+  
+  .path-element-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 15px;
+  }
+  
+  .path-element-info img.path-image, 
+  .path-element-info img.element-image {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+  }
+  
+  .character-info h2 {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 24px;
+  }
+  
+  .character-description {
+    margin: 20px;
+    font-size: 18px;
+    max-width: 600px;
+  }
+  
+  .relics-section, .stat-upgrade-section {
+    margin-top: 30px;
+  }
+  
+  .relics-section h3, .stat-upgrade-section h3 {
+    font-size: 22px;
+    margin-bottom: 10px;
+  }
+  
+  .equipment-list {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  
+  .equipment-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 15px;
+  }
+  
+  .equipment-item img {
+    width: 80px; /* Small consistent size for all equipment */
+    height: 80px;
+    object-fit: contain;
+    border-radius: 5px;
+  }
+  
